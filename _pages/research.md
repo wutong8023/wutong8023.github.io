@@ -21,8 +21,8 @@ nav_order: 6
     - Knowledge Graph-Enhanced Machine Learning
 
 ## Recent Phd Student
-- Rihui Jin (2024 - ): Tabular and Text Reasoning, Phd Student @ Southeast University & Monash University, co-supervised with Prof. Guilin Qi and Prof. Reza Haffari.
-- Peiwen Zhao (2023 - ): Temporal Reasoning, Phd Student @ Beijing Institute of Technology, co-supervised with Prof. Chong Feng, Prof. Wei Lu, and Prof. Reza Haffari.
+- Rihui Jin (2024 - ): Tabular and Textual Reasoning, Phd Student @ Southeast University & Monash University, co-supervised with Prof. Guilin Qi and Prof. Reza Haffari.
+- Peiwen Zhao (2023 - ): Temporal Reasoning with LLM, Phd Student @ Beijing Institute of Technology, co-supervised with Prof. Chong Feng, Prof. Wei Lu, and Prof. Reza Haffari.
 
 
 ## Recent Postgraduate Student
@@ -36,5 +36,5 @@ nav_order: 6
 
 ## Alumni
 - Jingqi Kang (2021 - 2024) -> iFLYTEK: Speech Information Extraction, Mphil @ Southeast University & Monash University, co-suppervised with Prof. Guilin Qi.
-- Xi Xu (2019 - 2022) -> Bytedance: Few-shot Information Extraction, Mphil @ Southeast University & Monash University, co-suppervised with Prof. Guilin Qi.
+- Xi Xu (2019 - 2022) -> Bytedance: Few-shot Information Extraction, Mphil @ Southeast University & Monash University, co-suppervised with Prof. Guilin Qi and A/Prof. Ningyu Zhang.
 - Xuekai Li (2018 - 2021) -> Wechat: Continual Information Extraction, Mphil @ Southeast University & Monash University, co-suppervised with Prof. Guilin Qi.
