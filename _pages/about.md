@@ -2,12 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
-  align: right
+  align: left
   image: prof_pic_tong.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>555 your office number</p>
     <p>123 your address street</p>
@@ -27,8 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<br>
+<br>
+Hi there! I’m a Research Fellow in the [Department of Data Science & AI at Monash University](https://research.monash.edu/en/persons/tongtong-wu). I completed my PhD at Southeast University, co-supervised by Prof. [Guilin Qi](https://cs.seu.edu.cn/gqi/main.htm), Prof. [Reza Haffari](https://rezahaffari.github.io/HomePage/HomePage.html), and Prof. [Yuan-Fang Li](https://liyuanfang.github.io/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research focuses on how AI systems can perceive, remember, reason about, and adapt to a continuously evolving world. This interest stems from my doctoral work on [Continual Learning](https://scholar.google.com/citations?user=u1Qp8lUAAAAJ&hl=en) and [Dynamic Knowledge Graphs](https://scholar.google.com/citations?user=u1Qp8lUAAAAJ&hl=en).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I'm always open to new ideas and collaborations! Please feel free to get in touch!
