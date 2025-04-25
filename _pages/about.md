@@ -26,7 +26,9 @@ latest_posts:
 
 <br>
 <br>
-Hi there! I’m a Research Fellow in the [Department of Data Science & AI at Monash University](https://research.monash.edu/en/persons/tongtong-wu). I completed my PhD at Southeast University, co-supervised by Prof. [Guilin Qi](https://cs.seu.edu.cn/gqi/main.htm), Prof. [Reza Haffari](https://rezahaffari.github.io/HomePage/HomePage.html), and Prof. [Yuan-Fang Li](https://liyuanfang.github.io/).
+Hi there :wave:! 
+
+I’m a Research Fellow in the [Department of Data Science & AI at Monash University](https://research.monash.edu/en/persons/tongtong-wu). I completed my PhD at Southeast University, co-supervised by Prof. [Guilin Qi](https://cs.seu.edu.cn/gqi/main.htm), Prof. [Reza Haffari](https://rezahaffari.github.io/HomePage/HomePage.html), and Prof. [Yuan-Fang Li](https://liyuanfang.github.io/).
 
 My research explores how AI systems perceive, reason, and adapt in evolving environments, building on my work in [Continual Learning](https://scholar.google.com/citations?user=u1Qp8lUAAAAJ&hl=en) and [Dynamic Knowledge Graphs](https://scholar.google.com/citations?user=u1Qp8lUAAAAJ&hl=en).
 
