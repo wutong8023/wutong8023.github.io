@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Lifelong Learning, Lifelong Exploration
+subtitle: 
 
 profile:
   align: left
