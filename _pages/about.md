@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: <br>
 
 profile:
   align: left
@@ -24,6 +24,7 @@ latest_posts:
 ---
 
 
+<br>
 <br>
 Hi there! I’m a Research Fellow in the [Department of Data Science & AI at Monash University](https://research.monash.edu/en/persons/tongtong-wu). I completed my PhD at Southeast University, co-supervised by Prof. [Guilin Qi](https://cs.seu.edu.cn/gqi/main.htm), Prof. [Reza Haffari](https://rezahaffari.github.io/HomePage/HomePage.html), and Prof. [Yuan-Fang Li](https://liyuanfang.github.io/).
 
