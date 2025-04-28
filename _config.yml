@@ -200,7 +200,7 @@ exclude:
   - _pages/profile.md
   - _pages/about_einstein.md
   - _pages/books.md
-  - _posts/
+  - _rm_pages/
   - _projects/
   
 keep_files:
