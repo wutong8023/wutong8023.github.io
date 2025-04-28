@@ -38,7 +38,9 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix" style="text-align: justify; margin: 2em auto;">{{ content }}</div>
+
+    <br>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
@@ -56,6 +58,8 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <br>
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
@@ -63,6 +67,8 @@ layout: default
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
+
+    <br>
 
     <!-- Social -->
     {% if page.social %}
