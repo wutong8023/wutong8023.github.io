@@ -80,7 +80,7 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Knowledge Evolution and Update in Artificial Intelligence
+    - title: Knowledge Evolution in Artificial Intelligence
       items:
         - Large Language Model
         - Dynamic Knowledge Graph
