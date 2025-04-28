@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-1 paper on Few-shot Event Detection accepted to [ACL-IJCNLP 2021](https://2021.aclweb.org).
+One paper on [Few-shot Event Detection](https://arxiv.org/pdf/2105.09509) is accepted to [ACL-IJCNLP 2021](https://2021.aclweb.org).

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper on [Empirical Analysis of CL and PLM](https://researchmgt.monash.edu/ws/portalfiles/portal/470247539/466809118_oa.pdf) accepted to [ICLR 2022](https://iclr.cc).
+One paper on [Empirical Analysis of CL and PLM](https://researchmgt.monash.edu/ws/portalfiles/portal/470247539/466809118_oa.pdf) is accepted to [ICLR 2022](https://iclr.cc).
