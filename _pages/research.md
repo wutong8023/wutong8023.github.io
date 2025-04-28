@@ -2,7 +2,7 @@
 layout: default
 permalink: /Research/
 title: Research
-description: My research interests and expertise
+description: Research interests and expertise.
 nav: true
 nav_order: 6
 ---
