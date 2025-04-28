@@ -7,7 +7,7 @@ first_name: Tongtong
 middle_name: 
 last_name: Wu | 吴桐桐
 contact_note: >
-  I'm always open to new ideas and collaborations, feel free to get in touch:incoming_envelope:!
+ :incoming_envelope: I'm always open to new ideas and collaborations, feel free to get in touch :incoming_envelope:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   My personal web site: research, publications, misc.
 footer_text: >
