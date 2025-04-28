@@ -5,7 +5,7 @@
       {% if content.items %}
         <ul class="subitems">
           {% for subitem in content.items %}
-            <li>
+            <li class="arrow-item">
               <span class="subitem">{{ subitem }}</span>
             </li>
           {% endfor %}
@@ -14,3 +14,22 @@
     </li>
   {% endfor %}
 </ul>
+
+<style>
+.subitems {
+  list-style: none;
+  padding-left: 1.2em;
+}
+
+.arrow-item {
+  position: relative;
+  margin-bottom: 0.3em;
+}
+
+.arrow-item::before {
+  content: "→";
+  position: absolute;
+  left: -1.2em;
+  color: var(--global-theme-color);
+}
+</style>
