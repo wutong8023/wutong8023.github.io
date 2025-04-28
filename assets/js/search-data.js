@@ -485,13 +485,6 @@ ninja.data = [{
           window.open("https://research.monash.edu/en/persons/tongtong-wu", "_blank");
         },
       },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://wutong8023.github.io/", "_blank");
-        },
-      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
