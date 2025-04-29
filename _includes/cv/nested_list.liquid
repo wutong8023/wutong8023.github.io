@@ -6,14 +6,17 @@
         <ul class="subitems">
           {% for subitem in content.items %}
             <li class="{% if content.title contains 'Conferences' %}conference-item{% elsif content.title contains 'Journals' %}journal-item{% elsif content.title contains 'Knowledge Evolution' %}research-item{% else %}arrow-item{% endif %}">
-              <span class="subitem">
-                {% if content.title contains 'Conferences' %}
-                  {% assign parts = subitem | split: "(" %}
-                  <strong>{{ parts.first | strip }}</strong>{% if parts.size > 1 %} ({{ parts.last }}{% endif %}
-                {% else %}
-                  {{ subitem }}
-                {% endif %}
-              </span>
+              {% if content.title contains 'Conferences' %}
+                {% assign parts = subitem | split: "(" %}
+                {% assign conf_name = parts.first | strip %}
+                {% assign dates = parts.last | remove: ")" | strip %}
+                <div class="conference-grid">
+                  <strong class="conf-name">{{ conf_name }}</strong>
+                  <span class="conf-date">{{ dates }}</span>
+                </div>
+              {% else %}
+                <span class="subitem">{{ subitem }}</span>
+              {% endif %}
             </li>
           {% endfor %}
         </ul>
@@ -89,5 +92,20 @@
 
 .list-group-item .subitems {
   padding: 1rem;
+}
+
+.conference-grid {
+  display: grid;
+  grid-template-columns: minmax(100px, 200px) auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.conf-name {
+  min-width: 100px;
+}
+
+.conf-date {
+  color: var(--global-text-color);
 }
 </style>
