@@ -1,7 +1,7 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for content in entry.contents %}
     <li class="list-group-item p-0">
-      <h5 class="title-header">{{ content.title }}</h5>
+      <h5 class="title-header badge font-weight-bold text-uppercase">{{ content.title }}</h5>
       {% if content.items %}
         <ul class="subitems">
           {% for subitem in content.items %}
@@ -68,12 +68,19 @@
 }
 
 .title-header {
-  background-color: var(--global-theme-color);
-  color: white;
+  background-color: var(--global-theme-color) !important;
+  color: var(--global-bg-color) !important;
   margin: 0;
   padding: 0.5rem 1rem;
   text-align: left;
   width: 100%;
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+[data-theme='dark'] .title-header {
+  background-color: var(--global-theme-color) !important;
+  color: var(--global-bg-color) !important;
 }
 
 .list-group-item {
