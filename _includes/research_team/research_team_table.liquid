@@ -23,22 +23,22 @@
           {% endif %}
           {% if content.degree %}
             <div class="ml-1 ml-md-4">
-              <div class="d-flex align-items-baseline">
-                <div style="width: 20px; margin-right: 8px;">
+              <div class="d-flex align-items-baseline flex-wrap">
+                <div style="width: 20px; margin-right: 8px;" class="mb-1">
                   <i class="fa-solid fa-graduation-cap icondegree" style="color: var(--global-theme-color)"></i>
                 </div>
-                <div>
+                <div class="flex-grow-1">
                   <span class="degree">{{ content.degree }}{% if content.research %} - {{ content.research }}{% endif %}</span>
                 </div>
               </div>
             </div>
           {% elsif content.research %}
             <div class="ml-1 ml-md-4">
-              <div class="d-flex align-items-baseline">
-                <div style="width: 20px; margin-right: 8px;">
+              <div class="d-flex align-items-baseline flex-wrap">
+                <div style="width: 20px; margin-right: 8px;" class="mb-1">
                   <i class="fa-solid fa-flask iconresearch" style="color: var(--global-theme-color)"></i>
                 </div>
-                <div>
+                <div class="flex-grow-1">
                   <span class="research">{{ content.research }}</span>
                 </div>
               </div>
@@ -46,11 +46,11 @@
           {% endif %}
           {% if content.affiliation %}
             <div class="ml-1 ml-md-4">
-              <div class="d-flex align-items-baseline">
-                <div style="width: 20px; margin-right: 8px;">
+              <div class="d-flex align-items-baseline flex-wrap">
+                <div style="width: 20px; margin-right: 8px;" class="mb-1">
                   <i class="fa-solid fa-building-columns iconinstitution" style="color: var(--global-theme-color)"></i>
                 </div>
-                <div>
+                <div class="flex-grow-1">
                   {% if content.affiliation.first %}
                     {% for affil in content.affiliation %}
                       <span class="institution">{{ affil }}{% unless forloop.last %}, {% endunless %}</span>
@@ -64,14 +64,14 @@
           {% endif %}
           {% if content.current_position %}
             <div class="ml-1 ml-md-4">
-              <div class="d-flex align-items-baseline">
-                <div style="width: 20px; margin-right: 8px;">
+              <div class="d-flex align-items-baseline flex-wrap">
+                <div style="width: 20px; margin-right: 8px;" class="mb-1">
                   <i class="fa-solid fa-briefcase iconposition" style="color: var(--global-theme-color)"></i>
                 </div>
-                <div style="width: 120px;">
+                <div style="width: 120px;" class="mb-1">
                   <span class="position-label">Current Position:</span>
                 </div>
-                <div>
+                <div class="flex-grow-1">
                   <span class="position-content">{{ content.current_position }}</span>
                 </div>
               </div>
@@ -79,18 +79,18 @@
           {% endif %}
           {% if content.co-supervisor %}
             <div class="ml-1 ml-md-4">
-              <div class="d-flex align-items-baseline">
-                <div style="width: 20px; margin-right: 8px;">
+              <div class="d-flex align-items-baseline flex-wrap">
+                <div style="width: 20px; margin-right: 8px;" class="mb-1">
                   <i class="fa-solid fa-user-graduate iconco-supervisor" style="color: var(--global-theme-color)"></i>
                 </div>
-                <div style="width: 120px;">
+                <div style="width: 120px;" class="mb-1">
                   <span class="co-supervisor-label">Co-supervisors:</span>
                 </div>
-                <div>
+                <div class="flex-grow-1">
                   <span class="co-supervisor-content">
                     {% for supervisor in content.co-supervisor %}
                       {% if supervisor.url %}
-                        <a href="{{ supervisor.url }}" target="_blank">{{ supervisor.name }}</a>{% unless forloop.last %}, {% endunless %}
+                        <a href="{{ supervisor.url }}" target="_blank" class="themed">{{ supervisor.name }}</a>{% unless forloop.last %}, {% endunless %}
                       {% else %}
                         {{ supervisor.name }}{% unless forloop.last %}, {% endunless %}
                       {% endif %}
