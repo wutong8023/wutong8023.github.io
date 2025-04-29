@@ -13,15 +13,15 @@ layout: default
 
   <article>
     <div class="research-team">
-      {% for section in site.data.research_team %}
-        <a class="anchor" id="{{ section.title | slugify }}"></a>
+      {% for entry in site.data.research_team %}
+        <a class="anchor" id="{{ entry.title | slugify }}"></a>
         <div class="card mt-3 p-3">
-          <h3 class="card-title font-weight-medium">{{ section.title }}</h3>
+          <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
           <div>
-            {% if section.type == 'research_team_table' %}
-              {% include research_team/research_team_table.liquid research_team=section.content %}
+            {% if entry.type == 'research_team_table' %}
+              {% include research_team/research_team_table.liquid%}
             {% else %}
-              {{ section.contents }}
+              {{ entry.contents }}
             {% endif %}
           </div>
         </div>

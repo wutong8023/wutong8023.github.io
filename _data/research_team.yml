@@ -1,6 +1,6 @@
 - title: PhD Students
   type: research_team_table
-  content:
+  contents:
     - name: Rihui Jin
       period: 2024 - present
       research: Tabular and Textual Reasoning
@@ -31,7 +31,7 @@
 
 - title: Postgraduate Students
   type: research_team_table
-  content:
+  contents:
     - name: Nipun Nair
       period: 2025 - present
       research: Conversational Recommentation Systems
@@ -112,7 +112,7 @@
 
 - title: Alumni
   type: research_team_table
-  content:
+  contents:
     - name: Jingqi Kang
       period: 2021 - 2024
       research: Speech Information Extraction
