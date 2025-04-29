@@ -46,22 +46,30 @@
           {% endif %}
           {% if content.current_position %}
             <div class="ml-1 ml-md-4">
-              <i class="fa-solid fa-briefcase iconposition" style="color: var(--global-theme-color)"></i>
-              <table class="description-table" style="margin-bottom: 0;">
-                <tr>
-                  <td style="width: 120px; vertical-align: top;"><span class="position-label">Current Position:</span></td>
-                  <td><span class="position-content">{{ content.current_position }}</span></td>
-                </tr>
-              </table>
+              <div class="d-flex align-items-baseline">
+                <div style="width: 20px; margin-right: 8px;">
+                  <i class="fa-solid fa-briefcase iconposition" style="color: var(--global-theme-color)"></i>
+                </div>
+                <div style="width: 120px;">
+                  <span class="position-label">Current Position:</span>
+                </div>
+                <div>
+                  <span class="position-content">{{ content.current_position }}</span>
+                </div>
+              </div>
             </div>
           {% endif %}
           {% if content.co-supervisor %}
             <div class="ml-1 ml-md-4">
-              <i class="fa-solid fa-user-graduate iconco-supervisor" style="color: var(--global-theme-color)"></i>
-              <table class="description-table" style="margin-bottom: 0;">
-                <tr>
-                  <td style="width: 120px; vertical-align: top;"><span class="supervisor-label">Co-supervisors:</span></td>
-                  <td><span class="supervisor-content">
+              <div class="d-flex align-items-baseline">
+                <div style="width: 20px; margin-right: 8px;">
+                  <i class="fa-solid fa-user-graduate iconco-supervisor" style="color: var(--global-theme-color)"></i>
+                </div>
+                <div style="width: 120px;">
+                  <span class="co-supervisor-label">Co-supervisors:</span>
+                </div>
+                <div>
+                  <span class="co-supervisor-content">
                     {% for supervisor in content.co-supervisor %}
                       {% if supervisor.url %}
                         <a href="{{ supervisor.url }}" target="_blank">{{ supervisor.name }}</a>{% unless forloop.last %}, {% endunless %}
@@ -69,9 +77,9 @@
                         {{ supervisor.name }}{% unless forloop.last %}, {% endunless %}
                       {% endif %}
                     {% endfor %}
-                  </span></td>
-                </tr>
-              </table>
+                  </span>
+                </div>
+              </div>
             </div>
           {% endif %}
           {% if content.homepage %}
