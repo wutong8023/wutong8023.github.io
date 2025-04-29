@@ -1,8 +1,72 @@
 ---
 layout: default
 ---
+<!-- The Side Nav -->
+<div class="sidenav">
+  <div class="sidenav-content">
+    {% for section in site.data.research_team %}
+      <a href="#{{ section.title | slugify }}">{{ section.title }}</a>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- The Main Content -->
 <div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
   <article>
     {{ content }}
   </article>
 </div>
+
+<style>
+.sidenav {
+  width: 240px;
+  position: fixed;
+  z-index: 1;
+  left: 20px;
+  top: 120px;
+  padding: 20px;
+  border-right: 1px solid var(--global-divider-color);
+}
+
+.sidenav-content {
+  position: sticky;
+  top: 120px;
+}
+
+.sidenav a {
+  padding: 6px 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--global-text-color);
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.sidenav a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+.post {
+  margin-left: 260px;
+}
+
+@media screen and (max-width: 1200px) {
+  .post {
+    margin-left: 0;
+  }
+}
+</style>
