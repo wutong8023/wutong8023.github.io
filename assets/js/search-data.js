@@ -77,8 +77,11 @@ ninja.data = [{
           section: "News",},{id: "news-i-have-been-invited-to-give-a-talk-at-seu-and-njupt-i-look-forward-to-seeing-you-there",
           title: 'I have been invited to give a talk at SEU and NJUPT. I...',
           description: "",
-          section: "News",},{id: "news-our-paper-on-error-detection-in-knowledge-graphs-has-been-accepted-to-dasfaa-2025-and-another-paper-on-large-language-models-understanding-of-knowledge-graphs-has-been-accepted-to-knowledge-based-systems",
+          section: "News",},{id: "news-our-paper-on-error-detection-in-knowledge-graphs-has-been-accepted-to-dasfaa-2025",
           title: 'Our paper on Error Detection in Knowledge Graphs has been accepted to DASFAA...',
+          description: "",
+          section: "News",},{id: "news-our-paper-on-large-language-models-understanding-of-knowledge-graphs-has-been-accepted-to-knowledge-based-systems",
+          title: 'Our paper on Large Language Models’ Understanding of Knowledge Graphs has been accepted...',
           description: "",
           section: "News",},{
         id: 'social-dblp',
