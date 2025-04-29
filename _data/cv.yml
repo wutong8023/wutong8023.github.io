@@ -8,6 +8,17 @@
     - name: Languages
       value: English, Mandarin Chinese, Dangshanese
 
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Knowledge Evolution in Artificial Intelligence
+      items:
+        - Large Language Model
+        - Dynamic Knowledge Graph
+        - Continual (Lifelong) Learning
+        - Agentic Self-Evolution
+        - API Evolution (AI4SE)
+
 - title: Education
   type: time_table
   contents:
@@ -96,17 +107,6 @@
         - ACM Transactions on Asian and Low-Resource Language Information Processing
         - Knowledge-Based Systems
         
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Knowledge Evolution in Artificial Intelligence
-      items:
-        - Large Language Model
-        - Dynamic Knowledge Graph
-        - Continual (Lifelong) Learning
-        - Agentic Self-Evolution
-        - API Evolution (AI4SE)
 
 - title: Other Interests
   type: list
