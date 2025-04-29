@@ -5,7 +5,7 @@
       {% if content.items %}
         <ul class="subitems">
           {% for subitem in content.items %}
-            <li class="{% if content.title contains 'Conferences' %}conference-item{% elsif content.title contains 'Journals' %}journal-item{% else %}arrow-item{% endif %}">
+            <li class="{% if content.title contains 'Conferences' %}conference-item{% elsif content.title contains 'Journals' %}journal-item{% elsif content.title contains 'Knowledge Evolution' %}research-item{% else %}arrow-item{% endif %}">
               {% if content.title contains 'Conferences' %}
                 {% assign parts = subitem | split: "(" %}
                 {% assign conf_name = parts.first | strip %}
@@ -66,7 +66,7 @@
 
 .research-item::before {
   font-family: "Font Awesome 6 Free";
-  content: "\f002";  /* fa-magnifying-glass */
+  content: "\f14e";  /* fa-compass */
   font-weight: 900;
   position: absolute;
   left: -1.8em;
