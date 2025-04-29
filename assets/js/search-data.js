@@ -83,6 +83,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-llms-understanding-of-knowledge-graphs-has-been-accepted-to-knowledge-based-systems",
           title: 'Our paper on LLMs’ Understanding of Knowledge Graphs has been accepted to Knowledge-based...',
           description: "",
+          section: "News",},{id: "news-our-paper-on-non-monotonic-reasoning-capability-of-llms-has-been-accepted-to-ijcai-2025",
+          title: 'Our paper on Non-monotonic Reasoning Capability of LLMs has been accepted to IJCAI...',
+          description: "",
           section: "News",},{
         id: 'social-dblp',
         title: 'DBLP',
