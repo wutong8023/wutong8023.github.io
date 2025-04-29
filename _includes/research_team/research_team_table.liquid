@@ -1,222 +1,89 @@
-{% for section in research_team %}
-<div class="card mt-3 p-3">
-  <a class="anchor" id="{{ section.title | slugify }}"></a>
-  <h3 class="card-title font-weight-medium">{{ section.title }}</h3>
-  <ul class="card-text font-weight-light list-group list-group-flush">
-    {% for member in section.content %}
-      <li class="list-group-item">
-        <div class="row">
-          {% if member.period %}
-            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px">
-              <table class="table-cv">
-                <tbody>
-                  <tr>
-                    <td>
-                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-                        {{- member.period -}}
-                      </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for content in entry.contents %}
+    <li class="list-group-item">
+      <div class="row">
+        {% if content.period %}
+          <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px">
+            <table class="table-cv">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                      {{- content.period -}}
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        {% endif %}
+        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+          {% if content.name %}
+            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ content.name }}</h6>
+          {% endif %}
+          {% if content.degree %}
+            <div class="ml-1 ml-md-4">
+              <i class="fa-solid fa-graduation-cap icondegree"></i>
+              <span class="degree">{{ content.degree }}</span>
             </div>
           {% endif %}
-          
-          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-            {% if member.name %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">{{ member.name }}</h6>
-            {% endif %}
-
-            {% if member.affiliation %}
-              <table class="table-cv ml-1 ml-md-4 institution">
-                <tbody>
+          {% if content.research %}
+            <div class="ml-1 ml-md-4">
+              <i class="fa-solid fa-flask iconresearch"></i>
+              <span class="research">{{ content.research }}</span>
+            </div>
+          {% endif %}
+          {% if content.affiliation %}
+            <table class="table-cv ml-1 ml-md-4 institution">
+              <tbody>
+                {% if content.affiliation.first %}
+                  {% for affil in content.affiliation %}
+                    <tr>
+                      <td style="vertical-align: top; text-align: center" class="institution">
+                        <i class="fa-solid fa-building-columns iconinstitution"></i>
+                      </td>
+                      <td class="institution">{{ affil }}</td>
+                    </tr>
+                  {% endfor %}
+                {% else %}
                   <tr>
                     <td style="vertical-align: top; text-align: center" class="institution">
                       <i class="fa-solid fa-building-columns iconinstitution"></i>
                     </td>
-                    <td class="institution">
-                      {% if member.affiliation.first %}
-                        {% for aff in member.affiliation %}
-                          {{ aff }}{% unless forloop.last %}, {% endunless %}
-                        {% endfor %}
-                      {% else %}
-                        {{ member.affiliation }}
-                      {% endif %}
-                    </td>
+                    <td class="institution">{{ content.affiliation }}</td>
                   </tr>
-                </tbody>
-              </table>
-            {% endif %}
-
-            {% if member.research %}
-              <table class="table-cv ml-1 ml-md-4">
-                <tbody>
-                  <tr>
-                    <td style="vertical-align: top; text-align: center">
-                      <i class="fa-solid fa-microscope iconinstitution"></i>
-                    </td>
-                    <td>{{ member.research }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            {% endif %}
-
-            {% if member.co-supervisor %}
-              <table class="table-cv ml-1 ml-md-4">
-                <tbody>
-                  <tr>
-                    <td style="vertical-align: top; text-align: center">
-                      <i class="fa-solid fa-chalkboard-user iconinstitution"></i>
-                    </td>
-                    <td>
-                      Co-supervised by:
-                      {% for supervisor in member.co-supervisor %}
-                        {% if supervisor.url %}
-                          <a href="{{ supervisor.url }}" target="_blank" class="supervisor-link">{{ supervisor.name }}</a>
-                        {% else %}
-                          {{ supervisor.name }}
-                        {% endif %}
-                        {% unless forloop.last %}, {% endunless %}
-                      {% endfor %}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            {% endif %}
-
-            {% if member.current_position %}
-              <table class="table-cv ml-1 ml-md-4">
-                <tbody>
-                  <tr>
-                    <td style="vertical-align: top; text-align: center">
-                      <i class="fa-solid fa-briefcase iconinstitution"></i>
-                    </td>
-                    <td>Current Position: {{ member.current_position }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            {% endif %}
-
-            {% if member.degree %}
-              <table class="table-cv ml-1 ml-md-4">
-                <tbody>
-                  <tr>
-                    <td style="vertical-align: top; text-align: center">
-                      <i class="fa-solid fa-graduation-cap iconinstitution"></i>
-                    </td>
-                    <td>Degree: {{ member.degree }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            {% endif %}
-
-            {% if member.homepage != "" or member.publications.size > 0 %}
-              <div class="container-links ml-1 ml-md-4">
-                {% if member.homepage != "" %}
-                  <div class="container-link-button">
-                    <a href="{{ member.homepage }}" target="_blank" class="btncv z-depth-0">
-                      <i class="fa-solid fa-house-user"></i> Homepage
-                    </a>
-                  </div>
                 {% endif %}
-                {% if member.publications.size > 0 %}
-                  <div class="container-link-button">
-                    <a href="#" class="btncv z-depth-0">
-                      <i class="fa-solid fa-book"></i> Publications
-                    </a>
-                  </div>
+              </tbody>
+            </table>
+          {% endif %}
+          {% if content.current_position %}
+            <div class="ml-1 ml-md-4">
+              <i class="fa-solid fa-briefcase iconposition"></i>
+              <span class="position">Current Position: {{ content.current_position }}</span>
+            </div>
+          {% endif %}
+          {% if content.co-supervisor %}
+            <div class="ml-1 ml-md-4">
+              <i class="fa-solid fa-user-graduate iconco-supervisor"></i>
+              <span class="co-supervisor">Co-supervisors: </span>
+              {% for supervisor in content.co-supervisor %}
+                {% if supervisor.url %}
+                  <a href="{{ supervisor.url }}" target="_blank">{{ supervisor.name }}</a>{% unless forloop.last %}, {% endunless %}
+                {% else %}
+                  {{ supervisor.name }}{% unless forloop.last %}, {% endunless %}
                 {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+          {% if content.homepage %}
+            <div class="container-links ml-1 ml-md-4">
+              <div class="container-link-button">
+                <a href="{{ content.homepage }}" target="_blank" class="btncv z-depth-0">Homepage</a>
               </div>
-            {% endif %}
-          </div>
+            </div>
+          {% endif %}
         </div>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-{% endfor %}
-
-<style>
-.card {
-  transition: all 0.3s ease;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  background-color: var(--global-bg-color);
-}
-
-.card:hover {
-  box-shadow: 0 4px 12px var(--global-shadow-color);
-}
-
-.card-title {
-  color: var(--global-text-color);
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.table-cv {
-  margin-bottom: 0.5rem;
-}
-
-.table-cv td {
-  padding: 0.25rem 0.5rem;
-}
-
-.iconinstitution {
-  color: var(--global-theme-color);
-  width: 1.2rem;
-}
-
-.title {
-  color: var(--global-text-color);
-  font-weight: 600;
-}
-
-.institution {
-  color: var(--global-text-color-light);
-}
-
-.supervisor-link {
-  color: var(--global-theme-color);
-  text-decoration: none;
-}
-
-.supervisor-link:hover {
-  text-decoration: underline;
-}
-
-.container-links {
-  margin-top: 1rem;
-}
-
-.container-link-button {
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.btncv {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  background-color: var(--global-code-bg-color);
-  color: var(--global-text-color);
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.btncv:hover {
-  background-color: var(--global-theme-color);
-  color: var(--global-bg-color);
-  text-decoration: none;
-}
-
-.anchor {
-  display: block;
-  position: relative;
-  top: -100px;
-  visibility: hidden;
-}
-</style> 
+      </div>
+    </li>
+  {% endfor %}
+</ul>
