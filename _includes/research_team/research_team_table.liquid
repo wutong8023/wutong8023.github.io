@@ -56,6 +56,20 @@
                 </div>
               {% endif %}
 
+              {% if member.current_position %}
+                <div class="current-position">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <span>Current Position: {{ member.current_position }}</span>
+                </div>
+              {% endif %}
+
+              {% if member.degree %}
+                <div class="degree">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <span>Degree: {{ member.degree }}</span>
+                </div>
+              {% endif %}
+
               <div class="member-links">
                 {% if member.homepage != "" %}
                   <a href="{{ member.homepage }}" target="_blank" class="member-link">
@@ -116,7 +130,9 @@
 
 .affiliation-container,
 .research-interests,
-.co-supervisor {
+.co-supervisor,
+.current-position,
+.degree {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -125,7 +141,9 @@
 
 .affiliation-container i,
 .research-interests i,
-.co-supervisor i {
+.co-supervisor i,
+.current-position i,
+.degree i {
   color: var(--global-theme-color);
   width: 1.2rem;
 }

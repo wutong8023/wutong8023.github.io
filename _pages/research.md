@@ -5,8 +5,7 @@ title: Team
 description: Research Team.
 nav: true
 nav_order: 6
+toc:
+  sidebar: left
 ---
-
-{% assign research_team = site.data.research_team %}
-{% include research_team/research_team_table.liquid %}
 
