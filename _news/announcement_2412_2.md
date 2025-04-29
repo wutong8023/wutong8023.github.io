@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One position paper of [LifeSpan Cognitive Systems](https://arxiv.org/abs/2409.13265) is accepted to [TMLR](https://jmlr.org/tmlr/).
+Our position paper on [LifeSpan Cognitive Systems](https://arxiv.org/abs/2409.13265) has been accepted to [TMLR](https://jmlr.org/tmlr/).

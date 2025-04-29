@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'll be giving a 3-hour tutorial on [Continual Learning with LLMs]() at [EMNLP 2025](https://2025.emnlp.org/), hope to see you there!
+I will be delivering a 3-hour tutorial on [Continual Learning with LLMs]() at [EMNLP 2025](https://2025.emnlp.org/). Hope to see you there!
