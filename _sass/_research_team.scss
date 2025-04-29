@@ -1,0 +1,36 @@
+// Research Team styles
+.list-group-item.cv-content-item {
+  background-color: var(--global-card-bg-color);
+  border-color: var(--global-divider-color);
+  color: var(--global-text-color);
+
+  .title {
+    color: var(--global-text-color);
+  }
+
+  .degree,
+  .research,
+  .institution,
+  .position-label,
+  .position-content,
+  .co-supervisor-label,
+  .co-supervisor-content {
+    color: var(--global-text-color);
+  }
+
+  .iconposition,
+  .iconco-supervisor {
+    color: var(--global-theme-color);
+  }
+
+  // Ensure text is readable in dark mode
+  .badge {
+    background-color: var(--global-theme-color);
+    color: var(--global-bg-color);
+  }
+}
+
+// Ensure list group has proper background in dark mode
+.list-group.list-group-flush {
+  background-color: var(--global-card-bg-color);
+} 
