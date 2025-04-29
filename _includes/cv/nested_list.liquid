@@ -5,9 +5,9 @@
       {% if content.items %}
         <ul class="subitems">
           {% for subitem in content.items %}
-            <li class="{% if content.title contains 'conference' %}conference-item{% elsif content.title contains 'journal' %}journal-item{% elsif content.title contains 'research interest' %}research-item{% else %}arrow-item{% endif %}">
+            <li class="{% if content.title contains 'Conferences' %}conference-item{% elsif content.title contains 'Journals' %}journal-item{% elsif content.title contains 'Knowledge Evolution' %}research-item{% else %}arrow-item{% endif %}">
               <span class="subitem">
-                {% if content.title contains 'conference' %}
+                {% if content.title contains 'Conferences' %}
                   {% assign parts = subitem | split: "(" %}
                   <strong>{{ parts.first | strip }}</strong>{% if parts.size > 1 %} ({{ parts.last }}{% endif %}
                 {% else %}
