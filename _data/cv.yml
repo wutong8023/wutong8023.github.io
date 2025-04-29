@@ -109,6 +109,9 @@
         
 
 - title: Other Interests
-  type: list
+  type: map
   contents:
-    - <u>Hobbies:</u> Reading, Board Games (Chinese Chess, Go, Army Chess, etc.)
+    - name: Reading
+      value: History, Literature, and Philosophy
+    - name: Board Games
+      value: Chinese Chess, Go, Army Chess, etc.
