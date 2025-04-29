@@ -46,14 +46,14 @@
           {% endif %}
           {% if content.current_position %}
             <div class="ml-1 ml-md-4">
-              <div class="d-flex align-items-baseline flex-wrap">
-                <div style="width: 20px; margin-right: 8px;" class="mb-1">
-                  <i class="fa-solid fa-briefcase iconposition"></i>
+              <div class="d-flex align-items-baseline">
+                <div style="width: 20px; margin-right: 8px;">
+                  <i class="fa-solid fa-briefcase iconposition" style="color: var(--global-theme-color)"></i>
                 </div>
-                <div style="width: 120px;" class="mb-1">
+                <div style="width: 120px;">
                   <span class="position-label">Current Position:</span>
                 </div>
-                <div class="flex-grow-1">
+                <div>
                   <span class="position-content">{{ content.current_position }}</span>
                 </div>
               </div>
@@ -61,18 +61,18 @@
           {% endif %}
           {% if content.co-supervisor %}
             <div class="ml-1 ml-md-4">
-              <div class="d-flex align-items-baseline flex-wrap">
-                <div style="width: 20px; margin-right: 8px;" class="mb-1">
-                  <i class="fa-solid fa-user-graduate iconco-supervisor"></i>
+              <div class="d-flex align-items-baseline">
+                <div style="width: 20px; margin-right: 8px;">
+                  <i class="fa-solid fa-user-graduate iconco-supervisor" style="color: var(--global-theme-color)"></i>
                 </div>
-                <div style="width: 120px;" class="mb-1">
+                <div style="width: 120px;">
                   <span class="co-supervisor-label">Co-supervisors:</span>
                 </div>
-                <div class="flex-grow-1">
+                <div>
                   <span class="co-supervisor-content">
                     {% for supervisor in content.co-supervisor %}
                       {% if supervisor.url %}
-                        <a href="{{ supervisor.url }}" target="_blank" class="btncv z-depth-0">{{ supervisor.name }}</a>{% unless forloop.last %}, {% endunless %}
+                        <a href="{{ supervisor.url }}" target="_blank">{{ supervisor.name }}</a>{% unless forloop.last %}, {% endunless %}
                       {% else %}
                         {{ supervisor.name }}{% unless forloop.last %}, {% endunless %}
                       {% endif %}
