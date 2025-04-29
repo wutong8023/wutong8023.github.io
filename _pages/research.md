@@ -2,7 +2,7 @@
 layout: research_team
 permalink: /Team/
 title: Team
-description: 
+description: My brilliant collaborators and friends.
 nav: true
 nav_order: 6
 toc:
