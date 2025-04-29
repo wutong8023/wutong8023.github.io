@@ -17,6 +17,8 @@ layout: default
         <a class="anchor" id="{{ entry.title | slugify }}"></a>
         <div class="card mt-3 p-3">
           <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+          <div class="title-divider"></div>
+            
           <div>
             {% if entry.type == 'research_team_table' %}
               {% include research_team/research_team_table.liquid%}
@@ -45,6 +47,13 @@ layout: default
 
 .research-team .card-title {
   color: var(--global-text-color);
+  margin-bottom: 0.5rem;
+}
+
+.research-team .title-divider {
+  height: 3px;
+  width: 100%;
+  background-color: var(--global-theme-color);
   margin-bottom: 1rem;
 }
 
