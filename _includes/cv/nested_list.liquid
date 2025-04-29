@@ -1,7 +1,7 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for content in entry.contents %}
-    <li class="list-group-item">
-      <h5 class="font-italic">{{ content.title }}</h5>
+    <li class="list-group-item p-0">
+      <h5 class="font-italic title-header">{{ content.title }}</h5>
       {% if content.items %}
         <ul class="subitems">
           {% for subitem in content.items %}
@@ -65,5 +65,22 @@
   position: absolute;
   left: -1.2em;
   color: var(--global-theme-color);
+}
+
+.title-header {
+  background-color: var(--global-theme-color);
+  color: white;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.list-group-item {
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-item .subitems {
+  padding: 1rem;
 }
 </style>
