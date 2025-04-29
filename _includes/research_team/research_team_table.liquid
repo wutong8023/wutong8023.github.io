@@ -65,9 +65,18 @@
             
             <!-- Third Column for Content -->
             <div class="col">
-              {% if content.degree %}
+              {% if content.degree or entry.title contains 'PhD' or entry.title contains 'Postgraduate' %}
                 <div class="mb-2">
-                  <span class="degree">{{ content.degree }}{% if content.research %} - {{ content.research }}{% endif %}</span>
+                  <span class="degree">
+                    {% if content.degree %}
+                      {{ content.degree }}
+                    {% elsif entry.title contains 'PhD' %}
+                      PhD Candidate
+                    {% elsif entry.title contains 'Postgraduate' %}
+                      Master Candidate
+                    {% endif %}
+                    {% if content.research %} - {{ content.research }}{% endif %}
+                  </span>
                 </div>
               {% endif %}
               {% if content.affiliation %}
