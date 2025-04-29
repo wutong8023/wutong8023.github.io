@@ -1,0 +1,163 @@
+<ul class="card-text list-group list-group-flush">
+  {% for member in research_team %}
+    <li class="list-group-item member-card">
+      <div class="row align-items-start">
+        {% if member.period %}
+          <div class="col-auto period-badge">
+            <span class="badge rounded-pill bg-primary">
+              {{- member.period -}}
+            </span>
+          </div>
+        {% endif %}
+        
+        <div class="col">
+          <div class="member-info">
+            {% if member.name %}
+              <h5 class="member-name">{{ member.name }}</h5>
+            {% endif %}
+            
+            {% if member.affiliation %}
+              <div class="affiliation-container">
+                <i class="fa-solid fa-building-columns"></i>
+                {% if member.affiliation.first %}
+                  {% for aff in member.affiliation %}
+                    <span class="affiliation">{{ aff }}</span>
+                    {% unless forloop.last %} · {% endunless %}
+                  {% endfor %}
+                {% else %}
+                  <span class="affiliation">{{ member.affiliation }}</span>
+                {% endif %}
+              </div>
+            {% endif %}
+
+            {% if member.research %}
+              <div class="research-interests">
+                <i class="fa-solid fa-microscope"></i>
+                <span>{{ member.research }}</span>
+              </div>
+            {% endif %}
+
+            {% if member.co-supervisor %}
+              <div class="co-supervisor">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Co-supervised by:</span>
+                {% for supervisor in member.co-supervisor %}
+                  {% if supervisor.url %}
+                    <a href="{{ supervisor.url }}" target="_blank" class="supervisor-link">{{ supervisor.name }}</a>
+                  {% else %}
+                    <span>{{ supervisor.name }}</span>
+                  {% endif %}
+                  {% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              </div>
+            {% endif %}
+
+            <div class="member-links">
+              {% if member.homepage != "" %}
+                <a href="{{ member.homepage }}" target="_blank" class="member-link">
+                  <i class="fa-solid fa-house-user"></i>
+                  <span>Homepage</span>
+                </a>
+              {% endif %}
+              {% if member.publications.size > 0 %}
+                <a href="#" class="member-link">
+                  <i class="fa-solid fa-book"></i>
+                  <span>Publications</span>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+
+<style>
+.member-card {
+  transition: all 0.3s ease;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  background-color: var(--global-bg-color);
+}
+
+.member-card:hover {
+  box-shadow: 0 4px 12px var(--global-shadow-color);
+  transform: translateY(-2px);
+}
+
+.period-badge {
+  margin-right: 1rem;
+}
+
+.period-badge .badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--global-theme-color);
+}
+
+.member-name {
+  margin: 0 0 0.75rem 0;
+  color: var(--global-text-color);
+  font-weight: 600;
+}
+
+.member-info > div {
+  margin-bottom: 0.75rem;
+}
+
+.affiliation-container,
+.research-interests,
+.co-supervisor {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--global-text-color-light);
+}
+
+.affiliation-container i,
+.research-interests i,
+.co-supervisor i {
+  color: var(--global-theme-color);
+  width: 1.2rem;
+}
+
+.member-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.member-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: var(--global-code-bg-color);
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.member-link:hover {
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
+  text-decoration: none;
+}
+
+.supervisor-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.supervisor-link:hover {
+  text-decoration: underline;
+}
+
+.affiliation {
+  font-weight: 500;
+}
+</style> 

@@ -1,0 +1,161 @@
+phd_students:
+  type: research_team_table
+  title: PhD Students
+  content:
+    - name: Rihui Jin
+      period: 2024 - present
+      research: Tabular and Textual Reasoning
+      homepage: ""
+      publications: []
+      affiliation:
+        - Southeast University
+        - Monash University
+      co-supervisor:
+        - name: Guilin Qi
+          url: https://cs.seu.edu.cn/gqi/main.htm
+        - name: Reza Haffari
+          url: https://rezahaffari.github.io/HomePage/HomePage.html
+
+    - name: Peiwen Zhao
+      period: 2023 - present
+      research: Temporal Reasoning with LLM
+      homepage: ""
+      publications: []
+      affiliation: Beijing Institute of Technology
+      co-supervisor:
+        - name: Chong Feng
+          url: https://scholar.google.com/citations?user=WSqhHRYAAAAJ&hl=zh-CN
+        - name: Wei Lu
+          url: https://scholar.google.com/citations?user=n41KN9AAAAAJ&hl=en&oi=ao
+        - name: Reza Haffari
+          url: https://rezahaffari.github.io/HomePage/HomePage.html
+
+postgraduate_students:
+  type: research_team_table
+  title: Postgraduate Students
+  content:
+    - name: Nipun Nair
+      period: 2025 - present
+      research: Conversational Recommentation Systems
+      homepage: ""
+      publications: []
+      affiliation: Monash University
+      co-supervisor:
+        - name: Teresa Wang
+          url: https://scholar.google.com/citations?user=jCziD10AAAAJ&hl=en
+
+    - name: Yuchen Lu
+      period: 2024 - present
+      research: API Knowledge Graph Construction
+      homepage: ""
+      publications: []
+      affiliation:
+        - Southeast University
+        - Monash University
+      co-supervisor:
+        - name: Guilin Qi
+          url: https://cs.seu.edu.cn/gqi/main.htm
+
+    - name: Jiazhen Kang
+      period: 2024 - present
+      research: Retrieval-augmentation Generation
+      homepage: ""
+      publications: []
+      affiliation:
+        - Southeast University
+        - Monash University
+      co-supervisor:
+        - name: Guilin Qi
+          url: https://cs.seu.edu.cn/gqi/main.htm
+
+    - name: Weigang Wu
+      period: 2023 - present
+      research: API Migration and LLM Adaptation
+      homepage: ""
+      publications: []
+      affiliation: Nanjing University of Posts and Telecommunications
+      co-supervisor:
+        - name: Kang Xu
+          url: https://scholar.google.com/citations?hl=en&user=N1UUDi0AAAAJ
+
+    - name: Xingyu Wang
+      period: 2023 - present
+      research: API Migration and LLM Benchmarking
+      homepage: ""
+      publications: []
+      affiliation: Nanjing University of Posts and Telecommunications
+      co-supervisor:
+        - name: Kang Xu
+          url: https://scholar.google.com/citations?hl=en&user=N1UUDi0AAAAJ
+
+    - name: Rongyi Chen
+      period: 2023 - present
+      research: Configurable Code Agent
+      homepage: ""
+      publications: []
+      affiliation:
+        - Southeast University
+        - Monash University
+      co-supervisor:
+        - name: Guilin Qi
+          url: https://cs.seu.edu.cn/gqi/main.htm
+
+    - name: Guitao Wang
+      period: 2022 - present
+      research: Speech Continual Learning
+      homepage: ""
+      publications: []
+      affiliation: Southeast University
+      co-supervisor:
+        - name: Guilin Qi
+          url: https://cs.seu.edu.cn/gqi/main.htm
+        - name: Jinming Zhao
+          url: https://scholar.google.com/citations?hl=en&user=9cmoT7YAAAAJ
+
+alumni:
+  type: research_team_table
+  title: Alumni
+  content:
+    - name: Jingqi Kang
+      period: 2021 - 2024
+      research: Speech Information Extraction
+      homepage: ""
+      publications: []
+      current_position: iFLYTEK
+      degree: Mphil
+      affiliation:
+        - Southeast University
+        - Monash University
+      co-supervisor:
+        - name: Guilin Qi
+          url: https://cs.seu.edu.cn/gqi/main.htm
+
+    - name: Xi Xu
+      period: 2019 - 2022
+      research: Few-shot Information Extraction
+      homepage: ""
+      publications: []
+      current_position: Bytedance
+      degree: Mphil
+      affiliation:
+        - Southeast University
+        - Monash University
+      co-supervisor:
+        - name: Guilin Qi
+          url: https://cs.seu.edu.cn/gqi/main.htm
+        - name: Ningyu Zhang
+          url: https://scholar.google.com/citations?user=xQDOPvsAAAAJ&hl=en
+
+    - name: Xuekai Li
+      period: 2018 - 2021
+      research: Continual Information Extraction
+      homepage: ""
+      publications: []
+      current_position: Wechat
+      degree: Mphil
+      affiliation:
+        - Southeast University
+        - Monash University
+      co-supervisor:
+        - name: Guilin Qi
+          url: https://cs.seu.edu.cn/gqi/main.htm 
