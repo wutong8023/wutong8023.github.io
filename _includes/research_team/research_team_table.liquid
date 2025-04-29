@@ -23,19 +23,19 @@
           {% endif %}
           {% if content.degree %}
             <div class="ml-1 ml-md-4">
-              <i class="fa-solid fa-graduation-cap icondegree"></i>
+              <i class="fa-solid fa-graduation-cap icondegree primary-color"></i>
               <span class="degree">{{ content.degree }}</span>
             </div>
           {% endif %}
           {% if content.research %}
             <div class="ml-1 ml-md-4">
-              <i class="fa-solid fa-flask iconresearch"></i>
+              <i class="fa-solid fa-flask iconresearch primary-color"></i>
               <span class="research">{{ content.research }}</span>
             </div>
           {% endif %}
           {% if content.affiliation %}
             <div class="ml-1 ml-md-4">
-              <i class="fa-solid fa-building-columns iconinstitution"></i>
+              <i class="fa-solid fa-building-columns iconinstitution primary-color"></i>
               {% if content.affiliation.first %}
                 {% for affil in content.affiliation %}
                   <span class="institution">{{ affil }}{% unless forloop.last %}, {% endunless %}</span>
@@ -47,13 +47,13 @@
           {% endif %}
           {% if content.current_position %}
             <div class="ml-1 ml-md-4">
-              <i class="fa-solid fa-briefcase iconposition"></i>
+              <i class="fa-solid fa-briefcase iconposition primary-color"></i>
               <span class="position">Current Position: {{ content.current_position }}</span>
             </div>
           {% endif %}
           {% if content.co-supervisor %}
             <div class="ml-1 ml-md-4">
-              <i class="fa-solid fa-user-graduate iconco-supervisor"></i>
+              <i class="fa-solid fa-user-graduate iconco-supervisor primary-color"></i>
               <span class="co-supervisor">Co-supervisors: </span>
               {% for supervisor in content.co-supervisor %}
                 {% if supervisor.url %}
