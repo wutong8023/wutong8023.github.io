@@ -1,6 +1,6 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for content in entry.contents %}
-    <li class="list-group-item cv-content-item">
+    <li class="list-group-item">
       <div class="row">
         {% if content.period %}
           <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px">
@@ -8,7 +8,7 @@
               <tbody>
                 <tr>
                   <td>
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                    <span class="badge font-weight-bold primary-color-dark text-uppercase align-middle" style="min-width: 75px">
                       {{- content.period -}}
                     </span>
                   </td>
@@ -21,66 +21,36 @@
           {% if content.name %}
             <h6 class="title font-weight-bold ml-1 ml-md-4">{{ content.name }}</h6>
           {% endif %}
-          
-          <div class="row ml-1 ml-md-4">
-            <!-- First Column for Icons -->
-            <div class="col-auto pr-0 ml-0" style="width: 20px;">
-              {% if content.degree %}
-                <div class="mb-2">
+          {% if content.degree %}
+            <div class="ml-1 ml-md-4">
+              <div class="d-flex align-items-baseline">
+                <div style="width: 20px; margin-right: 8px;">
                   <i class="fa-solid fa-graduation-cap icondegree" style="color: var(--global-theme-color)"></i>
                 </div>
-              {% endif %}
-              {% if content.affiliation %}
-                <div class="mb-2">
+                <div>
+                  <span class="degree">{{ content.degree }}{% if content.research %} - {{ content.research }}{% endif %}</span>
+                </div>
+              </div>
+            </div>
+          {% elsif content.research %}
+            <div class="ml-1 ml-md-4">
+              <div class="d-flex align-items-baseline">
+                <div style="width: 20px; margin-right: 8px;">
+                  <i class="fa-solid fa-flask iconresearch" style="color: var(--global-theme-color)"></i>
+                </div>
+                <div>
+                  <span class="research">{{ content.research }}</span>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+          {% if content.affiliation %}
+            <div class="ml-1 ml-md-4">
+              <div class="d-flex align-items-baseline">
+                <div style="width: 20px; margin-right: 8px;">
                   <i class="fa-solid fa-building-columns iconinstitution" style="color: var(--global-theme-color)"></i>
                 </div>
-              {% endif %}
-              {% if content.current_position %}
-                <div class="mb-2">
-                  <i class="fa-solid fa-briefcase iconposition" style="color: var(--global-theme-color)"></i>
-                </div>
-              {% endif %}
-              {% if content.co-supervisor %}
-                <div class="mb-2">
-                  <i class="fa-solid fa-user-graduate iconco-supervisor" style="color: var(--global-theme-color)"></i>
-                </div>
-              {% endif %}
-            </div>
-            
-            <!-- Second Column for Labels -->
-            <div class="col-auto pr-2" style="width: 120px;">
-              {% if content.degree %}
-                <div class="mb-2"></div>
-              {% endif %}
-              {% if content.affiliation %}
-                <div class="mb-2"></div>
-              {% endif %}
-              {% if content.current_position %}
-                <div class="mb-2">Current Position:</div>
-              {% endif %}
-              {% if content.co-supervisor %}
-                <div class="mb-2">Co-supervisors:</div>
-              {% endif %}
-            </div>
-            
-            <!-- Third Column for Content -->
-            <div class="col">
-              {% if content.degree or entry.title contains 'PhD' or entry.title contains 'Postgraduate' %}
-                <div class="mb-2">
-                  <span class="degree">
-                    {% if content.degree %}
-                      {{ content.degree }}
-                    {% elsif entry.title contains 'PhD' %}
-                      PhD Candidate
-                    {% elsif entry.title contains 'Postgraduate' %}
-                      Master Candidate
-                    {% endif %}
-                    {% if content.research %} - {{ content.research }}{% endif %}
-                  </span>
-                </div>
-              {% endif %}
-              {% if content.affiliation %}
-                <div class="mb-2">
+                <div>
                   {% if content.affiliation.first %}
                     {% for affil in content.affiliation %}
                       <span class="institution">{{ affil }}{% unless forloop.last %}, {% endunless %}</span>
@@ -89,14 +59,34 @@
                     <span class="institution">{{ content.affiliation }}</span>
                   {% endif %}
                 </div>
-              {% endif %}
-              {% if content.current_position %}
-                <div class="mb-2">
+              </div>
+            </div>
+          {% endif %}
+          {% if content.current_position %}
+            <div class="ml-1 ml-md-4">
+              <div class="d-flex align-items-baseline">
+                <div style="width: 20px; margin-right: 8px;">
+                  <i class="fa-solid fa-briefcase iconposition" style="color: var(--global-theme-color)"></i>
+                </div>
+                <div style="width: 120px;">
+                  <span class="position-label">Current Position:</span>
+                </div>
+                <div>
                   <span class="position-content">{{ content.current_position }}</span>
                 </div>
-              {% endif %}
-              {% if content.co-supervisor %}
-                <div class="mb-2">
+              </div>
+            </div>
+          {% endif %}
+          {% if content.co-supervisor %}
+            <div class="ml-1 ml-md-4">
+              <div class="d-flex align-items-baseline">
+                <div style="width: 20px; margin-right: 8px;">
+                  <i class="fa-solid fa-user-graduate iconco-supervisor" style="color: var(--global-theme-color)"></i>
+                </div>
+                <div style="width: 120px;">
+                  <span class="co-supervisor-label">Co-supervisors:</span>
+                </div>
+                <div>
                   <span class="co-supervisor-content">
                     {% for supervisor in content.co-supervisor %}
                       {% if supervisor.url %}
@@ -107,12 +97,11 @@
                     {% endfor %}
                   </span>
                 </div>
-              {% endif %}
+              </div>
             </div>
-          </div>
-          
+          {% endif %}
           {% if content.homepage %}
-            <div class="container-links ml-1 ml-md-4 mt-2">
+            <div class="container-links ml-1 ml-md-4">
               <div class="container-link-button">
                 <a href="{{ content.homepage }}" target="_blank" class="btncv z-depth-0">Homepage</a>
               </div>
