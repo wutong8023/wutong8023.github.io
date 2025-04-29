@@ -5,8 +5,15 @@
       {% if content.items %}
         <ul class="subitems">
           {% for subitem in content.items %}
-            <li class="arrow-item">
-              <span class="subitem">{{ subitem }}</span>
+            <li class="{% if content.title contains 'conference' %}conference-item{% elsif content.title contains 'journal' %}journal-item{% elsif content.title contains 'research interest' %}research-item{% else %}arrow-item{% endif %}">
+              <span class="subitem">
+                {% if content.title contains 'conference' %}
+                  {% assign parts = subitem | split: "(" %}
+                  <strong>{{ parts.first | strip }}</strong>{% if parts.size > 1 %} ({{ parts.last }}{% endif %}
+                {% else %}
+                  {{ subitem }}
+                {% endif %}
+              </span>
             </li>
           {% endfor %}
         </ul>
@@ -21,13 +28,40 @@
   padding-left: 1.2em;
 }
 
-.arrow-item {
+.arrow-item, .conference-item, .journal-item, .research-item {
   position: relative;
   margin-bottom: 0.3em;
 }
 
 .arrow-item::before {
   content: "→";
+  position: absolute;
+  left: -1.2em;
+  color: var(--global-theme-color);
+}
+
+.conference-item::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f3c5";  /* fa-map-marker-alt */
+  font-weight: 900;
+  position: absolute;
+  left: -1.2em;
+  color: var(--global-theme-color);
+}
+
+.journal-item::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f02d";  /* fa-book */
+  font-weight: 900;
+  position: absolute;
+  left: -1.2em;
+  color: var(--global-theme-color);
+}
+
+.research-item::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f002";  /* fa-magnifying-glass */
+  font-weight: 900;
   position: absolute;
   left: -1.2em;
   color: var(--global-theme-color);
