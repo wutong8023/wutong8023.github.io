@@ -1,6 +1,5 @@
-phd_students:
+- title: PhD Students
   type: research_team_table
-  title: PhD Students
   content:
     - name: Rihui Jin
       period: 2024 - present
@@ -30,9 +29,8 @@ phd_students:
         - name: Reza Haffari
           url: https://rezahaffari.github.io/HomePage/HomePage.html
 
-postgraduate_students:
+- title: Postgraduate Students
   type: research_team_table
-  title: Postgraduate Students
   content:
     - name: Nipun Nair
       period: 2025 - present
@@ -112,9 +110,8 @@ postgraduate_students:
         - name: Jinming Zhao
           url: https://scholar.google.com/citations?hl=en&user=9cmoT7YAAAAJ
 
-alumni:
+- title: Alumni
   type: research_team_table
-  title: Alumni
   content:
     - name: Jingqi Kang
       period: 2021 - 2024

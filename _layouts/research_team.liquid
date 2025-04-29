@@ -12,17 +12,48 @@ layout: default
   </header>
 
   <article>
-    {% if site.data.research_team.phd_students %}
-      {% include research_team/research_team_table.liquid research_team=site.data.research_team.phd_students %}
-    {% endif %}
-
-    {% if site.data.research_team.postgraduate_students %}
-      {% include research_team/research_team_table.liquid research_team=site.data.research_team.postgraduate_students %}
-    {% endif %}
-
-    {% if site.data.research_team.alumni %}
-      {% include research_team/research_team_table.liquid research_team=site.data.research_team.alumni %}
-    {% endif %}
+    <div class="research-team">
+      {% for section in site.data.research_team %}
+        <a class="anchor" id="{{ section.title | slugify }}"></a>
+        <div class="card mt-3 p-3">
+          <h3 class="card-title font-weight-medium">{{ section.title }}</h3>
+          <div>
+            {% if section.type == 'research_team_table' %}
+              {% include research_team/research_team_table.liquid research_team=section.content %}
+            {% else %}
+              {{ section.contents }}
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </article>
 </div>
+
+<style>
+.research-team .card {
+  transition: all 0.3s ease;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: var(--global-bg-color);
+}
+
+.research-team .card:hover {
+  box-shadow: 0 4px 12px var(--global-shadow-color);
+}
+
+.research-team .card-title {
+  color: var(--global-text-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+</style>
 
