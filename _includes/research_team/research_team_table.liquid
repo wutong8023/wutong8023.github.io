@@ -24,10 +24,9 @@
           {% if content.degree %}
             <div class="ml-1 ml-md-4">
               <i class="fa-solid fa-graduation-cap icondegree" style="color: var(--global-theme-color)"></i>
-              <span class="degree">{{ content.degree }}</span>
+              <span class="degree">{{ content.degree }}{% if content.research %} - {{ content.research }}{% endif %}</span>
             </div>
-          {% endif %}
-          {% if content.research %}
+          {% elsif content.research %}
             <div class="ml-1 ml-md-4">
               <i class="fa-solid fa-flask iconresearch" style="color: var(--global-theme-color)"></i>
               <span class="research">{{ content.research }}</span>
