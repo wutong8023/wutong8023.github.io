@@ -1,77 +1,82 @@
-<ul class="card-text list-group list-group-flush">
-  {% for member in entry.content %}
-    <li class="list-group-item member-card">
-      <div class="row align-items-start">
-        {% if member.period %}
-          <div class="col-auto period-badge">
-            <span class="badge rounded-pill bg-primary">
-              {{- member.period -}}
-            </span>
-          </div>
-        {% endif %}
-        
-        <div class="col">
-          <div class="member-info">
-            {% if member.name %}
-              <h5 class="member-name">{{ member.name }}</h5>
-            {% endif %}
-            
-            {% if member.affiliation %}
-              <div class="affiliation-container">
-                <i class="fa-solid fa-building-columns"></i>
-                {% if member.affiliation.first %}
-                  {% for aff in member.affiliation %}
-                    <span class="affiliation">{{ aff }}</span>
-                    {% unless forloop.last %} · {% endunless %}
+{% for section in research_team %}
+<div class="card mt-3 p-3">
+  <h3 class="card-title font-weight-medium">{{ section.title }}</h3>
+  <ul class="card-text list-group list-group-flush">
+    {% for member in section.content %}
+      <li class="list-group-item member-card">
+        <div class="row align-items-start">
+          {% if member.period %}
+            <div class="col-auto period-badge">
+              <span class="badge rounded-pill bg-primary">
+                {{- member.period -}}
+              </span>
+            </div>
+          {% endif %}
+          
+          <div class="col">
+            <div class="member-info">
+              {% if member.name %}
+                <h5 class="member-name">{{ member.name }}</h5>
+              {% endif %}
+              
+              {% if member.affiliation %}
+                <div class="affiliation-container">
+                  <i class="fa-solid fa-building-columns"></i>
+                  {% if member.affiliation.first %}
+                    {% for aff in member.affiliation %}
+                      <span class="affiliation">{{ aff }}</span>
+                      {% unless forloop.last %} · {% endunless %}
+                    {% endfor %}
+                  {% else %}
+                    <span class="affiliation">{{ member.affiliation }}</span>
+                  {% endif %}
+                </div>
+              {% endif %}
+
+              {% if member.research %}
+                <div class="research-interests">
+                  <i class="fa-solid fa-microscope"></i>
+                  <span>{{ member.research }}</span>
+                </div>
+              {% endif %}
+
+              {% if member.co-supervisor %}
+                <div class="co-supervisor">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                  <span>Co-supervised by:</span>
+                  {% for supervisor in member.co-supervisor %}
+                    {% if supervisor.url %}
+                      <a href="{{ supervisor.url }}" target="_blank" class="supervisor-link">{{ supervisor.name }}</a>
+                    {% else %}
+                      <span>{{ supervisor.name }}</span>
+                    {% endif %}
+                    {% unless forloop.last %}, {% endunless %}
                   {% endfor %}
-                {% else %}
-                  <span class="affiliation">{{ member.affiliation }}</span>
+                </div>
+              {% endif %}
+
+              <div class="member-links">
+                {% if member.homepage != "" %}
+                  <a href="{{ member.homepage }}" target="_blank" class="member-link">
+                    <i class="fa-solid fa-house-user"></i>
+                    <span>Homepage</span>
+                  </a>
+                {% endif %}
+                {% if member.publications.size > 0 %}
+                  <a href="#" class="member-link">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Publications</span>
+                  </a>
                 {% endif %}
               </div>
-            {% endif %}
-
-            {% if member.research %}
-              <div class="research-interests">
-                <i class="fa-solid fa-microscope"></i>
-                <span>{{ member.research }}</span>
-              </div>
-            {% endif %}
-
-            {% if member.co-supervisor %}
-              <div class="co-supervisor">
-                <i class="fa-solid fa-chalkboard-user"></i>
-                <span>Co-supervised by:</span>
-                {% for supervisor in member.co-supervisor %}
-                  {% if supervisor.url %}
-                    <a href="{{ supervisor.url }}" target="_blank" class="supervisor-link">{{ supervisor.name }}</a>
-                  {% else %}
-                    <span>{{ supervisor.name }}</span>
-                  {% endif %}
-                  {% unless forloop.last %}, {% endunless %}
-                {% endfor %}
-              </div>
-            {% endif %}
-
-            <div class="member-links">
-              {% if member.homepage != "" %}
-                <a href="{{ member.homepage }}" target="_blank" class="member-link">
-                  <i class="fa-solid fa-house-user"></i>
-                  <span>Homepage</span>
-                </a>
-              {% endif %}
-              {% if member.publications.size > 0 %}
-                <a href="#" class="member-link">
-                  <i class="fa-solid fa-book"></i>
-                  <span>Publications</span>
-                </a>
-              {% endif %}
             </div>
           </div>
         </div>
-      </div>
-    </li>
-  {% endfor %}
-</ul>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %}
 
 <style>
 .member-card {

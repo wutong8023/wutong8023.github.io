@@ -3,20 +3,6 @@ layout: default
 ---
 <div class="post">
   <article>
-    <div class="research_team">
-      {% for entry in site.data.research_team %}
-        <a class="anchor" id="{{ entry.title }}"></a>
-        <div class="card mt-3 p-3">
-          <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-          <div>
-            {% if entry.type == 'research_team_table' %}
-              {% include research_team/research_team_table.liquid %}
-            {% else %}
-              {{ entry.contents }}
-            {% endif %}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+    {{ content }}
   </article>
 </div>
