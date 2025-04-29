@@ -80,8 +80,8 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-error-detection-in-knowledge-graphs-has-been-accepted-to-dasfaa-2025",
           title: 'Our paper on Error Detection in Knowledge Graphs has been accepted to DASFAA...',
           description: "",
-          section: "News",},{id: "news-our-paper-on-large-language-models-understanding-of-knowledge-graphs-has-been-accepted-to-knowledge-based-systems",
-          title: 'Our paper on Large Language Models’ Understanding of Knowledge Graphs has been accepted...',
+          section: "News",},{id: "news-our-paper-on-llms-understanding-of-knowledge-graphs-has-been-accepted-to-knowledge-based-systems",
+          title: 'Our paper on LLMs’ Understanding of Knowledge Graphs has been accepted to Knowledge-based...',
           description: "",
           section: "News",},{
         id: 'social-dblp',
