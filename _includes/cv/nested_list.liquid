@@ -28,7 +28,8 @@
 <style>
 .subitems {
   list-style: none;
-  padding-left: 1.2em;
+  padding-left: 2.5em;
+  margin-left: 1rem;
 }
 
 .arrow-item, .conference-item, .journal-item, .research-item {
@@ -37,9 +38,11 @@
 }
 
 .arrow-item::before {
-  content: "→";
+  font-family: "Font Awesome 6 Free";
+  content: "\f152";  /* fa-square-caret-right */
+  font-weight: 400;  /* regular style for half-filled effect */
   position: absolute;
-  left: -1.2em;
+  left: -1.8em;
   color: var(--global-theme-color);
 }
 
@@ -48,7 +51,7 @@
   content: "\f3c5";  /* fa-map-marker-alt */
   font-weight: 900;
   position: absolute;
-  left: -1.2em;
+  left: -1.8em;
   color: var(--global-theme-color);
 }
 
@@ -57,7 +60,7 @@
   content: "\f02d";  /* fa-book */
   font-weight: 900;
   position: absolute;
-  left: -1.2em;
+  left: -1.8em;
   color: var(--global-theme-color);
 }
 
@@ -66,7 +69,7 @@
   content: "\f002";  /* fa-magnifying-glass */
   font-weight: 900;
   position: absolute;
-  left: -1.2em;
+  left: -1.8em;
   color: var(--global-theme-color);
 }
 
