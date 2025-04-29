@@ -1,9 +1,8 @@
 // Research Team styles
-.list-group-item.cv-content-item {
+.list-group-item {
   background-color: var(--global-card-bg-color);
   border-color: var(--global-divider-color);
-  color: var(--global-text-color);
-
+  
   .title {
     color: var(--global-text-color);
   }
@@ -18,19 +17,45 @@
     color: var(--global-text-color);
   }
 
+  .icondegree,
+  .iconresearch,
+  .iconinstitution,
   .iconposition,
   .iconco-supervisor {
     color: var(--global-theme-color);
   }
 
-  // Ensure text is readable in dark mode
+  // Badge styling
   .badge {
     background-color: var(--global-theme-color);
     color: var(--global-bg-color);
+  }
+
+  // Homepage button styling
+  .btncv {
+    color: var(--global-text-color);
+    border-color: var(--global-text-color);
+    background-color: transparent;
+    
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+    }
   }
 }
 
 // Ensure list group has proper background in dark mode
 .list-group.list-group-flush {
   background-color: var(--global-card-bg-color);
+}
+
+// Links styling
+.co-supervisor-content {
+  a {
+    color: var(--global-theme-color);
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 } 
