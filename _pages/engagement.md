@@ -9,5 +9,6 @@ nav_order: 3
 
 <!-- _pages/selected-publications.md -->
 <div class="publications">
-{% bibliography -f talk %}
-</div> 
+{% bibliography -f talks %}
+</div>
+ 
