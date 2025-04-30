@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-engagement",
           title: "Engagement",
-          description: "My recent and upcoming academic engagements, including keynote speeches, invited tutorials, and panel discussions.",
+          description: "My recent and upcoming academic engagements, including selected keynote speeches, invited tutorials, and panel discussions.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/Engagement/";
