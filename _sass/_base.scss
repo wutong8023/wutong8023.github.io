@@ -1419,3 +1419,25 @@ figure.cover {
     color: #23212d !important;
   }
 }
+
+// Search box styling
+.bibsearch-form-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  
+  &:focus {
+    outline: none;
+    border-color: var(--global-theme-color);
+    box-shadow: 0 0 0 2px rgba(38, 152, 186, 0.2);
+  }
+  
+  &::placeholder {
+    color: var(--global-text-color-light);
+  }
+}
