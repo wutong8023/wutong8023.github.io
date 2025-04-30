@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/Publication/";
           },
+        },{id: "nav-engagement",
+          title: "Engagement",
+          description: "My recent and upcoming academic engagements, including keynote speeches, invited tutorials, and panel discussions.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/Engagement/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "",
