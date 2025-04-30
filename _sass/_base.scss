@@ -742,6 +742,11 @@ footer.sticky-bottom {
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
           color: var(--global-card-bg-color) !important;
+          min-width: 2.5rem;
+
+          @media (min-width: 768px) {
+            min-width: 3rem;
+          }
 
           a {
             color: white;
