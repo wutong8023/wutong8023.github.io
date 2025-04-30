@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on [LLMs' Understanding of Knowledge Graphs](https://www.sciencedirect.com/science/article/pii/S0950705125001078) has been accepted to [Knowledge-based Systems](https://www.sciencedirect.com/science/article/pii/S0950705125001078).
+Our paper on [LLMs' Understanding of Knowledge Graphs](https://www.sciencedirect.com/science/article/pii/S0950705125001078) has been accepted to [KBS](https://www.sciencedirect.com/science/article/pii/S0950705125001078).
