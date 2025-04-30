@@ -83,6 +83,17 @@
   border-radius: 0;
   font-size: 1rem;
   line-height: 1.2;
+  white-space: normal;  /* Allow text to wrap */
+  word-wrap: break-word;  /* Break long words if necessary */
+  hyphens: auto;  /* Enable hyphenation */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 576px) {
+  .title-header {
+    font-size: 0.9rem;  /* Slightly smaller font size on mobile */
+    padding: 0.4rem 0.8rem;  /* Adjust padding for better mobile display */
+  }
 }
 
 [data-theme='dark'] .title-header {
