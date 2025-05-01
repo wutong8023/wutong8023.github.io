@@ -7,6 +7,8 @@ nav: true
 nav_order: 3
 ---
 
+{% include bib_search.liquid %}
+
 <!-- _pages/selected-publications.md -->
 <div class="publications">
 {% bibliography -f talks %}
