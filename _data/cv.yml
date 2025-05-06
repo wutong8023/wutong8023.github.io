@@ -11,7 +11,7 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Knowledge Evolution in Artificial Intelligence
+    - title: Aligning AI Systems with Ever-Changing World Knowledge
       items:
         - Large Language Model
         - Dynamic Knowledge Graph
