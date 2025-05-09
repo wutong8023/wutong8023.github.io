@@ -8,7 +8,7 @@
     - name: Languages
       value: English, Mandarin Chinese, Dangshanese
 
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
     - title: Aligning AI Systems with Ever-Changing World Knowledge
