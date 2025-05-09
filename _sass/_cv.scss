@@ -235,7 +235,7 @@ ul.timeline li::before {
 
 .arrow-item::before {
   font-family: "Font Awesome 6 Free";
-  content: "\f152";  /* fa-square-caret-right */
+  content: "\f05b";  /* <i class="fa-solid fa-crosshairs"></i> */
   font-weight: 400;  /* regular style for half-filled effect */
   position: absolute;
   left: -1.8em;
@@ -244,7 +244,7 @@ ul.timeline li::before {
 
 .conference-item::before {
   font-family: "Font Awesome 6 Free";
-  content: "\f51c";  /* fa-chalkboard-user */
+  content: "\f1ea";  /* <i class="fa-solid fa-newspaper"></i> */
   font-weight: 900;
   position: absolute;
   left: -1.8em;
