@@ -236,7 +236,7 @@ ul.timeline li::before {
 .arrow-item::before {
   font-family: "Font Awesome 6 Free";
   content: "\f05b";  /* <i class="fa-solid fa-crosshairs"></i> */
-  font-weight: 400;  /* regular style for half-filled effect */
+  font-weight: 900;  /* regular style for half-filled effect */
   position: absolute;
   left: -1.8em;
   color: var(--global-theme-color);
