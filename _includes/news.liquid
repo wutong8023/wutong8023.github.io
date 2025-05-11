@@ -26,6 +26,13 @@
             </td>
           </tr>
         {% endfor %}
+        {% if include.limit and news_size > news_limit %}
+          <tr>
+            <td colspan="2" style="text-align:center;">
+              <a href="{{ '/News/' | relative_url }}"> --- More news --- </a>
+            </td>
+          </tr>
+        {% endif %}
       </table>
     </div>
   {% else %}
