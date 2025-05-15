@@ -90,8 +90,8 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-llms-understanding-of-knowledge-graphs-has-been-accepted-to-kbs",
           title: 'Our paper on LLMs’ Understanding of Knowledge Graphs has been accepted to KBS....',
           description: "",
-          section: "News",},{id: "news-our-2-papers-on-complex-attribtion-assessment-and-multi-lingual-safty-alignment-has-been-accepted-to-the-main-conference-of-acl-2025-and-another-paper-on-multi-lingual-enhacement-of-llms-has-been-accepted-to-acl-25-findings",
-          title: 'Our 2 papers on Complex Attribtion Assessment and Multi-lingual Safty Alignment has been...',
+          section: "News",},{id: "news-our-2-papers-on-complex-attribtion-assessment-and-multi-lingual-safty-alignment-have-been-accepted-to-the-main-conference-of-acl-2025-and-another-paper-on-multi-lingual-enhacement-of-llms-has-been-accepted-to-acl-25-findings",
+          title: 'Our 2 papers on Complex Attribtion Assessment and Multi-lingual Safty Alignment have been...',
           description: "",
           section: "News",},{
         id: 'social-dblp',
