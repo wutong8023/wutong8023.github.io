@@ -96,6 +96,9 @@ ninja.data = [{
           section: "News",},{id: "news-another-paper-on-multi-lingual-enhacement-of-llms-has-been-accepted-to-acl-25-findings",
           title: 'Another paper on Multi-lingual Enhacement of LLMs has been accepted to ACL-25 findings....',
           description: "",
+          section: "News",},{id: "news-our-paper-on-continual-speech-learning-has-been-accepted-to-interspeech-2025",
+          title: 'Our paper on Continual Speech Learning has been accepted to InterSpeech 2025.',
+          description: "",
           section: "News",},{
         id: 'social-dblp',
         title: 'DBLP',
