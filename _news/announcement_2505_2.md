@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on [Continual Speech Learning]() has been accepted to [InterSpeech 2025](https://www.interspeech2025.org/home).
+Our paper on [Continual Speech Learning](https://arxiv.org/pdf/2506.01496) has been accepted to [InterSpeech 2025](https://www.interspeech2025.org/home).
