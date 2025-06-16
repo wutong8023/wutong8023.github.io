@@ -96,8 +96,8 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-continual-speech-learning-has-been-accepted-to-interspeech-2025",
           title: 'Our paper on Continual Speech Learning has been accepted to InterSpeech 2025.',
           description: "",
-          section: "News",},{id: "news-our-versicode-benchmark-has-been-officially-integrated-into-openhands-you-re-welcome-to-evaluate-it",
-          title: 'Our VersiCode benchmark has been officially integrated into OpenHands. You’re welcome to evaluate...',
+          section: "News",},{id: "news-our-versicode-benchmark-has-been-officially-integrated-into-openhands",
+          title: 'Our VersiCode benchmark has been officially integrated into OpenHands！',
           description: "",
           section: "News",},{
         id: 'social-dblp',
