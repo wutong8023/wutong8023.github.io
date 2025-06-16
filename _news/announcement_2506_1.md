@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our [VersiCode](https://github.com/All-Hands-AI/OpenHands/tree/main/evaluation/benchmarks/versicode) benchmark has been officially integrated into [OpenHands](https://www.all-hands.dev/). You're welcome to evaluate it.
+Our [VersiCode](https://github.com/All-Hands-AI/OpenHands/tree/main/evaluation/benchmarks/versicode) benchmark has been officially integrated into [OpenHands](https://www.all-hands.dev/)！
