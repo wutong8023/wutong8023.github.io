@@ -66,6 +66,7 @@ current_courses:
 - **Responsive Design**: Adapts to different screen sizes
 - **Interactive Elements**: Hover effects and animations
 - **Collapsible Course Details**: Course description and topics are hidden by default in expandable sections
+- **Theme Support**: Automatically adapts to light/dark themes using CSS variables
 - **Structured Layout**: Clear organization of information
 - **Custom Styling**: Professional appearance with custom CSS
 - **Data-Driven**: Easy to update content via YAML files
@@ -73,10 +74,11 @@ current_courses:
 ## Customization
 
 You can customize the appearance by modifying `_sass/_teach.scss`:
-- Colors and typography
+- Colors and typography (using CSS variables for theme support)
 - Card layouts and spacing
 - Animations and transitions
 - Responsive breakpoints
+- Theme-specific styling
 
 ## Dependencies
 
