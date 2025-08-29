@@ -1,19 +1,21 @@
 // Teach page specific styles
 .teach {
   .card {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px var(--global-shadow-color);
     transition: all 0.3s ease;
     
     &:hover {
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 16px var(--global-shadow-color);
       transform: translateY(-2px);
     }
   }
   
   .card-title {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
+    color: var(--global-text-color);
+    border-bottom: 2px solid var(--global-theme-color);
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
   }
@@ -30,24 +32,58 @@
         margin-bottom: 1rem;
         
         i {
-          color: #f39c12;
+          color: var(--global-theme-color);
         }
       }
+      
+      .card-text {
+        color: var(--global-text-color);
+      }
+    }
+  }
+  
+  // Philosophy principle cards
+  .philosophy-principle-card {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    
+    .card-title {
+      color: var(--global-theme-color);
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 1rem;
+      
+      i {
+        color: var(--global-theme-color);
+      }
+    }
+    
+    .card-text {
+      color: var(--global-text-color);
     }
   }
   
   // Course Section
   .course-item {
-    background: #f8f9fa;
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: var(--global-bg-color);
+      box-shadow: 0 4px 20px var(--global-shadow-color);
+      transform: translateY(-2px);
+    }
     
     .course-title {
-      color: #2c3e50;
+      color: var(--global-text-color);
       margin-bottom: 1rem;
       
       .text-muted {
+        color: var(--global-text-color-light);
         font-size: 0.9rem;
       }
     }
@@ -61,13 +97,13 @@
           border: none;
           
           &:first-child {
-            color: #34495e;
+            color: var(--global-text-color);
             font-weight: 600;
             width: 120px;
           }
           
           &:last-child {
-            color: #7f8c8d;
+            color: var(--global-text-color-light);
           }
         }
       }
@@ -81,20 +117,29 @@
         font-size: 1.2rem;
         padding: 0.75rem 1.5rem;
         border-radius: 25px;
-        background: linear-gradient(135deg, #3498db, #2980b9);
-        box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+        background-color: var(--global-theme-color);
+        color: var(--global-bg-color);
+        box-shadow: 0 2px 8px var(--global-shadow-color);
+      }
+      
+      .course-code-badge {
+        background-color: var(--global-theme-color);
+        color: var(--global-bg-color);
+        border: none;
       }
     }
     
     .course-description {
       h5 {
-        color: #34495e;
+        color: var(--global-text-color);
         margin-bottom: 0.75rem;
         font-size: 1.1rem;
+        border-bottom: 2px solid var(--global-theme-color);
+        padding-bottom: 0.5rem;
       }
       
       p {
-        color: #555;
+        color: var(--global-text-color);
         line-height: 1.6;
         margin-bottom: 0;
       }
@@ -102,19 +147,21 @@
     
     .course-topics {
       h5 {
-        color: #34495e;
+        color: var(--global-text-color);
         margin-bottom: 1rem;
         font-size: 1.1rem;
+        border-bottom: 2px solid var(--global-theme-color);
+        padding-bottom: 0.5rem;
       }
       
       .list-group-item {
         border: none;
         background: transparent;
         padding: 0.5rem 0;
-        color: #555;
+        color: var(--global-text-color);
         
         i {
-          color: #27ae60;
+          color: var(--global-theme-color);
           margin-right: 0.5rem;
         }
       }
@@ -153,67 +200,59 @@
     }
   }
   
-  // Hover effects for interactive elements
-  .course-item:hover {
-    background: #ffffff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-    transition: all 0.3s ease;
-  }
-  
   // Course Details Collapsible
   .course-details-collapsible {
-    border: 1px solid #e9ecef;
+    border: 1px solid var(--global-divider-color);
     border-radius: 8px;
-    background: #ffffff;
+    background-color: var(--global-card-bg-color);
     
     summary {
       cursor: pointer;
       padding: 1rem;
-      background: #f8f9fa;
+      background-color: var(--global-bg-color);
       border-radius: 8px 8px 0 0;
-      border-bottom: 1px solid #e9ecef;
+      border-bottom: 1px solid var(--global-divider-color);
       font-weight: 600;
-      color: #495057;
+      color: var(--global-text-color);
       transition: all 0.3s ease;
       
       &:hover {
-        background: #e9ecef;
-        color: #212529;
+        background-color: var(--global-hover-color);
+        color: var(--global-hover-text-color);
       }
       
       i {
         transition: transform 0.3s ease;
-        color: #6c757d;
+        color: var(--global-text-color-light);
       }
     }
     
     &[open] summary {
-      background: #e3f2fd;
-      color: #1976d2;
-      border-bottom-color: #bbdefb;
+      background-color: var(--global-theme-color);
+      color: var(--global-bg-color);
+      border-bottom-color: var(--global-theme-color);
       
       i {
         transform: rotate(180deg);
-        color: #1976d2;
+        color: var(--global-bg-color);
       }
     }
     
     .course-description,
     .course-topics {
       padding: 1rem;
-      background: #ffffff;
+      background-color: var(--global-card-bg-color);
       
       h5 {
-        color: #495057;
+        color: var(--global-text-color);
         margin-bottom: 0.75rem;
         font-size: 1.1rem;
-        border-bottom: 2px solid #e3f2fd;
+        border-bottom: 2px solid var(--global-theme-color);
         padding-bottom: 0.5rem;
       }
       
       p {
-        color: #6c757d;
+        color: var(--global-text-color);
         line-height: 1.6;
         margin-bottom: 0;
       }
@@ -222,10 +261,10 @@
         border: none;
         background: transparent;
         padding: 0.5rem 0;
-        color: #6c757d;
+        color: var(--global-text-color);
         
         i {
-          color: #28a745;
+          color: var(--global-theme-color);
           margin-right: 0.5rem;
         }
       }
@@ -242,17 +281,54 @@
     }
     
     &::-webkit-scrollbar-track {
-      background: #f1f1f1;
+      background-color: var(--global-divider-color);
       border-radius: 3px;
     }
     
     &::-webkit-scrollbar-thumb {
-      background: #c1c1c1;
+      background-color: var(--global-theme-color);
       border-radius: 3px;
       
       &:hover {
-        background: #a8a8a8;
+        background-color: var(--global-hover-color);
       }
     }
+  }
+  
+  // Table styling improvements
+  .table {
+    background-color: var(--global-card-bg-color);
+    
+    td {
+      color: var(--global-text-color);
+    }
+  }
+  
+  // Divider styling
+  hr {
+    border-color: var(--global-divider-color);
+  }
+  
+  // Link styling
+  a {
+    color: var(--global-theme-color);
+    
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: underline;
+    }
+  }
+  
+  // Icon styling consistency
+  .fa-solid,
+  .fa-regular,
+  .fa-brands {
+    color: var(--global-theme-color);
+  }
+  
+  // Badge styling consistency
+  .badge {
+    background-color: var(--global-theme-color);
+    color: var(--global-bg-color);
   }
 }
