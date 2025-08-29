@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publication",
           title: "Publication",
-          description: "Publications by categories in reversed chronological order.",
+          description: "Last Updated - 8 April, 2025.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/Publication/";
@@ -98,6 +98,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-our-versicode-benchmark-has-been-officially-integrated-into-openhands",
           title: 'Our VersiCode benchmark has been officially integrated into OpenHands！',
+          description: "",
+          section: "News",},{id: "news-i-m-delighted-to-share-that-i-ve-been-invited-to-join-the-editorial-board-of-data-intelligence",
+          title: 'I’m delighted to share that I’ve been invited to join the Editorial Board...',
           description: "",
           section: "News",},{
         id: 'social-dblp',
