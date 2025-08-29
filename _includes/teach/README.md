@@ -63,13 +63,14 @@ current_courses:
 
 ## Features
 
-- **Responsive Design**: Adapts to different screen sizes
+- **Responsive Design**: Optimized for all screen sizes with adaptive layouts
 - **Interactive Elements**: Hover effects and animations
 - **Collapsible Course Details**: Course description and topics are hidden by default in expandable sections
 - **Theme Support**: Automatically adapts to light/dark themes using CSS variables
 - **Structured Layout**: Clear organization of information
 - **Custom Styling**: Professional appearance with custom CSS
 - **Data-Driven**: Easy to update content via YAML files
+- **No Scrollbars**: Clean interface without unnecessary scrollbars in philosophy section
 
 ## Customization
 
@@ -77,8 +78,9 @@ You can customize the appearance by modifying `_sass/_teach.scss`:
 - Colors and typography (using CSS variables for theme support)
 - Card layouts and spacing
 - Animations and transitions
-- Responsive breakpoints
+- Responsive breakpoints and mobile optimization
 - Theme-specific styling
+- Philosophy section layout and spacing
 
 ## Dependencies
 

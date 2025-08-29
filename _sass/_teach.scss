@@ -4,8 +4,6 @@
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    background-color: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
     
     &:hover {
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -14,37 +12,25 @@
   }
   
   .card-title {
-    color: var(--global-text-color);
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
-    position: relative;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 60px;
-      height: 2px;
-      background-color: var(--global-theme-color);
-      border-radius: 1px;
-    }
   }
   
   // Teaching Philosophy Section
   .philosophy-principles {
     .card {
-      border-left: 4px solid var(--global-theme-color);
+      border-left: 4px solid #3498db;
       
       .card-title {
-        color: var(--global-theme-color);
-        
-        &::after {
-          display: none;
-        }
+        color: #3498db;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 1rem;
         
         i {
-          color: var(--global-theme-color);
+          color: #f39c12;
         }
       }
     }
@@ -52,19 +38,17 @@
   
   // Course Section
   .course-item {
-    background-color: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
+    background: #f8f9fa;
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 2rem;
     
     .course-title {
-      color: var(--global-text-color);
+      color: #2c3e50;
       margin-bottom: 1rem;
       
       .text-muted {
         font-size: 0.9rem;
-        color: var(--global-text-color-light);
       }
     }
     
@@ -77,13 +61,13 @@
           border: none;
           
           &:first-child {
-            color: var(--global-text-color);
+            color: #34495e;
             font-weight: 600;
             width: 120px;
           }
           
           &:last-child {
-            color: var(--global-text-color-light);
+            color: #7f8c8d;
           }
         }
       }
@@ -97,21 +81,20 @@
         font-size: 1.2rem;
         padding: 0.75rem 1.5rem;
         border-radius: 25px;
-        background-color: var(--global-theme-color);
-        color: var(--global-bg-color);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
       }
     }
     
     .course-description {
       h5 {
-        color: var(--global-text-color);
+        color: #34495e;
         margin-bottom: 0.75rem;
         font-size: 1.1rem;
       }
       
       p {
-        color: var(--global-text-color-light);
+        color: #555;
         line-height: 1.6;
         margin-bottom: 0;
       }
@@ -119,7 +102,7 @@
     
     .course-topics {
       h5 {
-        color: var(--global-text-color);
+        color: #34495e;
         margin-bottom: 1rem;
         font-size: 1.1rem;
       }
@@ -128,10 +111,10 @@
         border: none;
         background: transparent;
         padding: 0.5rem 0;
-        color: var(--global-text-color-light);
+        color: #555;
         
         i {
-          color: var(--global-theme-color);
+          color: #27ae60;
           margin-right: 0.5rem;
         }
       }
@@ -172,7 +155,7 @@
   
   // Hover effects for interactive elements
   .course-item:hover {
-    background-color: var(--global-card-bg-color);
+    background: #ffffff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
     transition: all 0.3s ease;
@@ -180,57 +163,57 @@
   
   // Course Details Collapsible
   .course-details-collapsible {
-    border: 1px solid var(--global-divider-color);
+    border: 1px solid #e9ecef;
     border-radius: 8px;
-    background-color: var(--global-card-bg-color);
+    background: #ffffff;
     
     summary {
       cursor: pointer;
       padding: 1rem;
-      background-color: var(--global-card-bg-color);
+      background: #f8f9fa;
       border-radius: 8px 8px 0 0;
-      border-bottom: 1px solid var(--global-divider-color);
+      border-bottom: 1px solid #e9ecef;
       font-weight: 600;
-      color: var(--global-text-color);
+      color: #495057;
       transition: all 0.3s ease;
       
       &:hover {
-        background-color: var(--global-divider-color);
-        color: var(--global-text-color);
+        background: #e9ecef;
+        color: #212529;
       }
       
       i {
         transition: transform 0.3s ease;
-        color: var(--global-text-color-light);
+        color: #6c757d;
       }
     }
     
     &[open] summary {
-      background-color: var(--global-theme-color);
-      color: var(--global-bg-color);
-      border-bottom-color: var(--global-theme-color);
+      background: #e3f2fd;
+      color: #1976d2;
+      border-bottom-color: #bbdefb;
       
       i {
         transform: rotate(180deg);
-        color: var(--global-bg-color);
+        color: #1976d2;
       }
     }
     
     .course-description,
     .course-topics {
       padding: 1rem;
-      background-color: var(--global-card-bg-color);
+      background: #ffffff;
       
       h5 {
-        color: var(--global-text-color);
+        color: #495057;
         margin-bottom: 0.75rem;
         font-size: 1.1rem;
-        border-bottom: 2px solid var(--global-theme-color);
+        border-bottom: 2px solid #e3f2fd;
         padding-bottom: 0.5rem;
       }
       
       p {
-        color: var(--global-text-color-light);
+        color: #6c757d;
         line-height: 1.6;
         margin-bottom: 0;
       }
@@ -239,10 +222,10 @@
         border: none;
         background: transparent;
         padding: 0.5rem 0;
-        color: var(--global-text-color-light);
+        color: #6c757d;
         
         i {
-          color: var(--global-theme-color);
+          color: #28a745;
           margin-right: 0.5rem;
         }
       }
