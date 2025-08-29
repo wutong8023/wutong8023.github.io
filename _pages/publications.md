@@ -2,7 +2,7 @@
 layout: page
 permalink: /Publication/
 title: Publication
-description: Publications by categories in reversed chronological order. 
+description: Last Updated - 8 April, 2025. 
 nav: true
 nav_order: 2
 ---
