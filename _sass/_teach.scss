@@ -161,6 +161,77 @@
     transition: all 0.3s ease;
   }
   
+  // Course Details Collapsible
+  .course-details-collapsible {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background: #ffffff;
+    
+    summary {
+      cursor: pointer;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 8px 8px 0 0;
+      border-bottom: 1px solid #e9ecef;
+      font-weight: 600;
+      color: #495057;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: #e9ecef;
+        color: #212529;
+      }
+      
+      i {
+        transition: transform 0.3s ease;
+        color: #6c757d;
+      }
+    }
+    
+    &[open] summary {
+      background: #e3f2fd;
+      color: #1976d2;
+      border-bottom-color: #bbdefb;
+      
+      i {
+        transform: rotate(180deg);
+        color: #1976d2;
+      }
+    }
+    
+    .course-description,
+    .course-topics {
+      padding: 1rem;
+      background: #ffffff;
+      
+      h5 {
+        color: #495057;
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+        border-bottom: 2px solid #e3f2fd;
+        padding-bottom: 0.5rem;
+      }
+      
+      p {
+        color: #6c757d;
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+      
+      .list-group-item {
+        border: none;
+        background: transparent;
+        padding: 0.5rem 0;
+        color: #6c757d;
+        
+        i {
+          color: #28a745;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  
   // Custom scrollbar for long content
   .card-text {
     max-height: 400px;

@@ -82,24 +82,32 @@ layout: default
                     </div>
                   </div>
                   
-                  <!-- Course Description -->
-                  <div class="course-description mt-3">
-                    <h5><strong>Course Description</strong></h5>
-                    <p>{{ course.description }}</p>
-                  </div>
-                  
-                  <!-- Key Topics -->
-                  <div class="course-topics mt-3">
-                    <h5><strong>Key Topics Covered</strong></h5>
-                    <ul class="list-group list-group-flush">
-                      {% for topic in course.topics %}
-                        <li class="list-group-item">
-                          <i class="fa-solid fa-check-circle text-success me-2"></i>
-                          {{ topic }}
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  </div>
+                  <!-- Course Details (Collapsible) -->
+                  <details class="course-details-collapsible mt-3">
+                    <summary class="course-details-summary">
+                      <strong>Detailed Course Information</strong>
+                      <i class="fa-solid fa-chevron-down ms-2"></i>
+                    </summary>
+                    
+                    <!-- Course Description -->
+                    <div class="course-description mt-3">
+                      <h5><strong>Course Description</strong></h5>
+                      <p>{{ course.description }}</p>
+                    </div>
+                    
+                    <!-- Key Topics -->
+                    <div class="course-topics mt-3">
+                      <h5><strong>Key Topics Covered</strong></h5>
+                      <ul class="list-group list-group-flush">
+                        {% for topic in course.topics %}
+                          <li class="list-group-item">
+                            <i class="fa-solid fa-check-circle text-success me-2"></i>
+                            {{ topic }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </details>
                 </div>
                 
                 {% unless forloop.last %}
@@ -193,24 +201,32 @@ layout: default
                     </div>
                   </div>
                   
-                  <!-- Course Description -->
-                  <div class="course-description mt-3">
-                    <h5><strong>Course Description</strong></h5>
-                    <p>{{ course.description }}</p>
-                  </div>
-                  
-                  <!-- Key Topics -->
-                  <div class="course-topics mt-3">
-                    <h5><strong>Key Topics Covered</strong></h5>
-                    <ul class="list-group list-group-flush">
-                      {% for topic in course.topics %}
-                        <li class="list-group-item">
-                          <i class="fa-solid fa-check-circle text-success me-2"></i>
-                          {{ topic }}
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  </div>
+                  <!-- Course Details (Collapsible) -->
+                  <details class="course-details-collapsible mt-3">
+                    <summary class="course-details-summary">
+                      <strong>Detailed Course Information</strong>
+                      <i class="fa-solid fa-chevron-down ms-2"></i>
+                    </summary>
+                    
+                    <!-- Course Description -->
+                    <div class="course-description mt-3">
+                      <h5><strong>Course Description</strong></h5>
+                      <p>{{ course.description }}</p>
+                    </div>
+                    
+                    <!-- Key Topics -->
+                    <div class="course-topics mt-3">
+                      <h5><strong>Key Topics Covered</strong></h5>
+                      <ul class="list-group list-group-flush">
+                        {% for topic in course.topics %}
+                          <li class="list-group-item">
+                            <i class="fa-solid fa-check-circle text-success me-2"></i>
+                            {{ topic }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </details>
                 </div>
                 
                 {% unless forloop.last %}

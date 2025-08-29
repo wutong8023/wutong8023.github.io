@@ -57,13 +57,15 @@ current_courses:
 
 2. The layout will automatically render:
    - Teaching philosophy with principles in cards
-   - Current courses with detailed information
+   - Current courses with basic information visible
+   - Expandable sections for course descriptions and topics
    - Responsive design for mobile and desktop
 
 ## Features
 
 - **Responsive Design**: Adapts to different screen sizes
 - **Interactive Elements**: Hover effects and animations
+- **Collapsible Course Details**: Course description and topics are hidden by default in expandable sections
 - **Structured Layout**: Clear organization of information
 - **Custom Styling**: Professional appearance with custom CSS
 - **Data-Driven**: Easy to update content via YAML files
