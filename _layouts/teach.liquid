@@ -1,0 +1,226 @@
+---
+layout: default
+---
+{% unless site.data.teach %}
+  <div class="post">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.description %}
+        <p class="post-description">{{ page.description }}</p>
+      {% endif %}
+    </header>
+
+    <article>
+      <div class="teach">
+        <!-- Teaching Philosophy Section -->
+        {% assign philosophy = site.data.teach.philosophy %}
+        <a class="anchor" id="{{ philosophy.title | downcase | replace: ' ', '-' }}"></a>
+        <div class="card mt-3 p-3">
+          <h3 class="card-title font-weight-medium">{{ philosophy.title }}</h3>
+          <div class="card-text font-weight-light">
+            <p>{{ philosophy.description }}</p>
+            <div class="row">
+              {% for principle in philosophy.principles %}
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">
+                        <i class="fa-solid fa-lightbulb me-2"></i>{{ principle.name }}
+                      </h5>
+                      <p class="card-text">{{ principle.description }}</p>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <!-- Current Courses Section -->
+        {% for year_data in site.data.teach.current_courses %}
+          <a class="anchor" id="{{ year_data.academic_year | downcase | replace: ' ', '-' }}"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">{{ year_data.academic_year }}</h3>
+            <div class="card-text font-weight-light">
+              {% for course in year_data.courses %}
+                <div class="course-item mb-4">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <h4 class="course-title">
+                        <strong>{{ course.code }} - {{ course.name }}</strong>
+                        <span class="text-muted">({{ course.university }})</span>
+                      </h4>
+                      <div class="course-details">
+                        <table class="table table-sm table-borderless">
+                          <tr>
+                            <td class="p-1 pr-2 font-weight-bold"><b>Role:</b></td>
+                            <td class="p-1 pl-2 font-weight-light">{{ course.role }}</td>
+                          </tr>
+                          <tr>
+                            <td class="p-1 pr-2 font-weight-bold"><b>Term:</b></td>
+                            <td class="p-1 pl-2 font-weight-light">{{ course.term }}</td>
+                          </tr>
+                          <tr>
+                            <td class="p-1 pr-2 font-weight-bold"><b>Level:</b></td>
+                            <td class="p-1 pl-2 font-weight-light">{{ course.level }}</td>
+                          </tr>
+                          <tr>
+                            <td class="p-1 pr-2 font-weight-bold"><b>Faculty:</b></td>
+                            <td class="p-1 pl-2 font-weight-light">{{ course.faculty }}</td>
+                          </tr>
+                          <tr>
+                            <td class="p-1 pr-2 font-weight-bold"><b>Credit Points:</b></td>
+                            <td class="p-1 pl-2 font-weight-light">{{ course.credit_points }}</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="course-badge">
+                        <span class="badge bg-primary fs-6">{{ course.code }}</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Course Description -->
+                  <div class="course-description mt-3">
+                    <h5><strong>Course Description</strong></h5>
+                    <p>{{ course.description }}</p>
+                  </div>
+                  
+                  <!-- Key Topics -->
+                  <div class="course-topics mt-3">
+                    <h5><strong>Key Topics Covered</strong></h5>
+                    <ul class="list-group list-group-flush">
+                      {% for topic in course.topics %}
+                        <li class="list-group-item">
+                          <i class="fa-solid fa-check-circle text-success me-2"></i>
+                          {{ topic }}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+                
+                {% unless forloop.last %}
+                  <hr class="my-4">
+                {% endunless %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+  </div>
+{% else %}
+  <div class="post">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.description %}
+        <p class="post-description">{{ page.description }}</p>
+      {% endif %}
+    </header>
+
+    <article>
+      <div class="teach">
+        <!-- Teaching Philosophy Section -->
+        {% assign philosophy = site.data.teach.philosophy %}
+        <a class="anchor" id="{{ philosophy.title | downcase | replace: ' ', '-' }}"></a>
+        <div class="card mt-3 p-3">
+          <h3 class="card-title font-weight-medium">{{ philosophy.title }}</h3>
+          <div class="card-text font-weight-light">
+            <p>{{ philosophy.description }}</p>
+            <div class="row">
+              {% for principle in philosophy.principles %}
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">
+                        <i class="fa-solid fa-lightbulb me-2"></i>{{ principle.name }}
+                      </h5>
+                      <p class="card-text">{{ principle.description }}</p>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <!-- Current Courses Section -->
+        {% for year_data in site.data.teach.current_courses %}
+          <a class="anchor" id="{{ year_data.academic_year | downcase | replace: ' ', '-' }}"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">{{ year_data.academic_year }}</h3>
+            <div class="card-text font-weight-light">
+              {% for course in year_data.courses %}
+                <div class="course-item mb-4">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <h4 class="course-title">
+                        <strong>{{ course.code }} - {{ course.name }}</strong>
+                        <span class="text-muted">({{ course.university }})</span>
+                      </h4>
+                      <div class="course-details">
+                        <table class="table table-sm table-borderless">
+                          <tr>
+                            <td class="p-1 pr-2 font-weight-bold"><b>Role:</b></td>
+                            <td class="p-1 pl-2 font-weight-light">{{ course.role }}</td>
+                          </tr>
+                          <tr>
+                            <td class="p-1 pr-2 font-weight-bold"><b>Term:</b></td>
+                            <td class="p-1 pl-2 font-weight-light">{{ course.term }}</td>
+                          </tr>
+                          <tr>
+                            <td class="p-1 pr-2 font-weight-bold"><b>Level:</b></td>
+                            <td class="p-1 pl-2 font-weight-light">{{ course.level }}</td>
+                          </tr>
+                          <tr>
+                            <td class="p-1 pr-2 font-weight-bold"><b>Faculty:</b></td>
+                            <td class="p-1 pl-2 font-weight-light">{{ course.faculty }}</td>
+                          </tr>
+                          <tr>
+                            <td class="p-1 pr-2 font-weight-bold"><b>Credit Points:</b></td>
+                            <td class="p-1 pl-2 font-weight-light">{{ course.credit_points }}</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="course-badge">
+                        <span class="badge bg-primary fs-6">{{ course.code }}</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Course Description -->
+                  <div class="course-description mt-3">
+                    <h5><strong>Course Description</strong></h5>
+                    <p>{{ course.description }}</p>
+                  </div>
+                  
+                  <!-- Key Topics -->
+                  <div class="course-topics mt-3">
+                    <h5><strong>Key Topics Covered</strong></h5>
+                    <ul class="list-group list-group-flush">
+                      {% for topic in course.topics %}
+                        <li class="list-group-item">
+                          <i class="fa-solid fa-check-circle text-success me-2"></i>
+                          {{ topic }}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+                
+                {% unless forloop.last %}
+                  <hr class="my-4">
+                {% endunless %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+  </div>
+{% endunless %}

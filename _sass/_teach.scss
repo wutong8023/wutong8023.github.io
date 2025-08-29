@@ -1,0 +1,187 @@
+// Teach page specific styles
+.teach {
+  .card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
+  }
+  
+  .card-title {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  // Teaching Philosophy Section
+  .philosophy-principles {
+    .card {
+      border-left: 4px solid #3498db;
+      
+      .card-title {
+        color: #3498db;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+        
+        i {
+          color: #f39c12;
+        }
+      }
+    }
+  }
+  
+  // Course Section
+  .course-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    
+    .course-title {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      
+      .text-muted {
+        font-size: 0.9rem;
+      }
+    }
+    
+    .course-details {
+      .table {
+        margin-bottom: 0;
+        
+        td {
+          padding: 0.25rem 0;
+          border: none;
+          
+          &:first-child {
+            color: #34495e;
+            font-weight: 600;
+            width: 120px;
+          }
+          
+          &:last-child {
+            color: #7f8c8d;
+          }
+        }
+      }
+    }
+    
+    .course-badge {
+      text-align: center;
+      margin-top: 1rem;
+      
+      .badge {
+        font-size: 1.2rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+      }
+    }
+    
+    .course-description {
+      h5 {
+        color: #34495e;
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+      }
+      
+      p {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+    }
+    
+    .course-topics {
+      h5 {
+        color: #34495e;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+      }
+      
+      .list-group-item {
+        border: none;
+        background: transparent;
+        padding: 0.5rem 0;
+        color: #555;
+        
+        i {
+          color: #27ae60;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .course-item {
+      padding: 1rem;
+      
+      .course-badge {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+    
+    .card-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  // Animation for cards
+  .card {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  // Hover effects for interactive elements
+  .course-item:hover {
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+  }
+  
+  // Custom scrollbar for long content
+  .card-text {
+    max-height: 400px;
+    overflow-y: auto;
+    
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 3px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 3px;
+      
+      &:hover {
+        background: #a8a8a8;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+# Teaching Data Configuration
+# This file contains structured data for the teaching page
+
+# Teaching Philosophy
+philosophy:
+  title: "Teaching Philosophy"
+  description: "I believe in fostering an interactive and engaging learning environment where students can develop both theoretical understanding and practical skills."
+  principles:
+    - name: "Active Learning"
+      description: "Encouraging student participation and hands-on experience"
+    - name: "Real-world Applications"
+      description: "Connecting theoretical concepts to practical problems"
+    - name: "Collaborative Learning"
+      description: "Promoting teamwork and peer-to-peer knowledge sharing"
+    - name: "Continuous Improvement"
+      description: "Adapting teaching methods based on student feedback"
+
+# Current Courses
+current_courses:
+  - year: "2025"
+    academic_year: "2025 Academic Year"
+    courses:
+      - code: "FIT5201"
+        name: "Machine Learning"
+        university: "Monash University"
+        role: "Guest Lecturer"
+        term: "Semester 1, 2 & Summer (T3)"
+        level: "Postgraduate"
+        faculty: "Faculty of Information Technology"
+        credit_points: 6
+        description: "This unit introduces machine learning and the major kinds of statistical learning models and algorithms used in data analysis. The course covers foundational concepts in machine learning and statistical learning theory, including bias-variance trade-offs, model selection, and how model complexity interplays with performance on unobserved data."
+        topics:
+          - "Linear models for regression and classification (linear basis function models, logistic regression, Bayesian classifiers, generalized linear models)"
+          - "Discriminative, probabilistic, and generative models"
+          - "Non-parametric models (k-nearest neighbour, Gaussian process regression)"
+          - "Clustering algorithms (k-means) and latent variable models (Gaussian mixture model)"
+          - "Expectation-maximization algorithms"
+          - "Neural networks and deep learning"
+
+# Page Configuration
+page:
+  title: "Teaching"
+  description: "My teaching experience, courses, and educational materials"
+  permalink: "/Teaching/"
+  nav: true
+  nav_order: 6
