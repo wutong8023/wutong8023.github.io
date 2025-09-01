@@ -98,11 +98,16 @@
         - name: Prof. Guilin Qi
           url: https://cs.seu.edu.cn/gqi/main.htm
 
+
+- title: Alumni
+  type: research_team_table
+  contents:
     - name: Guitao Wang
-      period: 2022 - present
+      period: 2022 - 2025
       research: Speech Continual Learning
       homepage: https://scholar.google.com/citations?user=7cMqeC0AAAAJ&hl=en&oi=ao
       publications: []
+      current_position: Monash University
       affiliation: Southeast University
       co-supervisor:
         - name: Prof. Guilin Qi
@@ -110,9 +115,6 @@
         - name: Dr. Jinming Zhao
           url: https://scholar.google.com/citations?hl=en&user=9cmoT7YAAAAJ
 
-- title: Alumni
-  type: research_team_table
-  contents:
     - name: Jingqi Kang
       period: 2021 - 2024
       research: Speech Information Extraction
