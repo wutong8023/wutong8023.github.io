@@ -21,7 +21,7 @@ current_courses:
     academic_year: "2025 Academic Year"
     courses:
       - code: "FIT5201"
-        name: "Machine Learning"
+        name: "Data Analysis Algorithms"
         university: "Monash University"
         role: "Guest Lecturer"
         term: "Semester 1, 2 & Summer (T3)"
