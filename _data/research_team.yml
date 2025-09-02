@@ -78,18 +78,6 @@
         - name: A/Prof Teresa Wang
           url: https://scholar.google.com/citations?user=jCziD10AAAAJ&hl=en
 
-    - name: Yuchen Lu
-      period: 2024 - present
-      research: API Knowledge Graph Construction
-      homepage: ""
-      publications: []
-      affiliation:
-        - Southeast University
-        - Monash University
-      co-supervisor:
-        - name: Prof. Guilin Qi
-          url: https://cs.seu.edu.cn/gqi/main.htm
-
     - name: Jiazhen Kang
       period: 2024 - present
       research: Retrieval-augmentation Generation
