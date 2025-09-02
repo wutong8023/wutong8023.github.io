@@ -1,6 +1,32 @@
 - title: PhD Students
   type: research_team_table
   contents:
+    - name: Guitao Wang
+      period: 2025 - present
+      research: Agentic Graph Optimization
+      homepage: ""
+      publications: []
+      affiliation: Monash University
+      co-supervisor:
+        - name: A/Prof Teresa Wang
+          url: https://scholar.google.com/citations?user=jCziD10AAAAJ&hl=en
+        - name: Prof. Reza Haffari
+          url: https://rezahaffari.github.io/HomePage/HomePage.html
+
+    - name: Shenyu Zhang
+      period: 2025 - present
+      research: LLM-based Memory Systems
+      homepage: ""
+      publications: []
+      affiliation: 
+        - Monash University
+        - Southeast University
+      co-supervisor:
+        - name: Prof. Guilin Qi
+          url: https://cs.seu.edu.cn/gqi/main.htm
+        - name: Prof. Reza Haffari
+          url: https://rezahaffari.github.io/HomePage/HomePage.html
+
     - name: Rihui Jin
       period: 2024 - present
       research: Tabular and Textual Reasoning
@@ -32,6 +58,16 @@
 - title: Postgraduate Students
   type: research_team_table
   contents:
+    - name: Kexin Dai
+      period: 2025 - present
+      research: Agentic Recommendation Systems
+      homepage: ""
+      publications: []
+      affiliation: Monash University
+      co-supervisor:
+        - name: A/Prof Teresa Wang
+          url: https://scholar.google.com/citations?user=jCziD10AAAAJ&hl=en
+
     - name: Nipun Nair
       period: 2025 - present
       research: Conversational Recommentation Systems
