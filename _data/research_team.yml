@@ -19,8 +19,8 @@
       homepage: ""
       publications: []
       affiliation: 
-        - Monash University
         - Southeast University
+        - Monash University
       co-supervisor:
         - name: Prof. Guilin Qi
           url: https://cs.seu.edu.cn/gqi/main.htm
