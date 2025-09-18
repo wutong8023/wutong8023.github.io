@@ -59,6 +59,7 @@
   type: research_team_table
   contents:
     - name: Kexin Dai
+    
       period: 2025 - present
       research: Agentic Recommendation Systems
       homepage: ""
