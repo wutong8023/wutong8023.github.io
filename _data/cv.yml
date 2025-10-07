@@ -91,6 +91,9 @@
 - title: Academic Service
   type: nested_list
   contents:
+    - title: Area Chair of Program Committee (Conferences)
+      items:
+        - ACL ARR (2025)
     - title: Member of Program Committee (Conferences)
       items:
         - ICML (2023, 2024, 2025)
