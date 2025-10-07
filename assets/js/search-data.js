@@ -112,6 +112,9 @@ ninja.data = [{
           section: "News",},{id: "news-two-of-our-papers-on-continual-knowledge-learning-and-multilingual-llm-reasoning-have-been-accepted-to-neurips-2025-excitingly-the-multilingual-paper-has-been-selected-as-a-spotlight",
           title: 'Two of our papers on Continual Knowledge Learning and Multilingual LLM Reasoning have...',
           description: "",
+          section: "News",},{id: "news-i-will-serve-as-an-area-chair-for-acl-arr-october-cycle",
+          title: 'I will serve as an Area Chair for ACL ARR (October cycle).',
+          description: "",
           section: "News",},{
         id: 'social-dblp',
         title: 'DBLP',
