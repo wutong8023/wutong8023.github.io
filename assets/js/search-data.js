@@ -115,6 +115,12 @@ ninja.data = [{
           section: "News",},{id: "news-i-will-serve-as-an-area-chair-for-acl-arr-october-cycle",
           title: 'I will serve as an Area Chair for ACL ARR (October cycle).',
           description: "",
+          section: "News",},{id: "news-our-paper-on-mathematical-reasoning-with-evolving-tax-laws-has-been-accepted-to-aaai-2026",
+          title: 'Our paper on Mathematical Reasoning with Evolving Tax Laws has been accepted to...',
+          description: "",
+          section: "News",},{id: "news-we-ll-be-giving-a-3-hour-tutorial-at-emnlp-2025-t7-continual-learning-of-llms-november-8-happy-to-connect",
+          title: 'We’ll be giving a 3-hour tutorial at EMNLP 2025 (T7 - Continual Learning...',
+          description: "",
           section: "News",},{
         id: 'social-dblp',
         title: 'DBLP',
