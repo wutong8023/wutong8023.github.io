@@ -17,14 +17,32 @@ philosophy:
 
 # Current Courses
 current_courses:
+  - year: "2026"
+    academic_year: "2026 Academic Year"
+    courses:
+      - code: "FIT5212"
+        name: "Data Analysis for Semi-Structured Data"
+        university: "Monash University"
+        role: "Lecturer (0.33 FTE, 68 hours)"
+        term: "Semester 1"
+        level: "Postgraduate"
+        faculty: "Faculty of Information Technology"
+        credit_points: 6
+        description: "This unit will explore basic forms of semi-structured data: text, time-sequence data, graphs and multiple relations in a database. Basic machine learning algorithms for these kinds of data will be analysed and applied. Some characteristic industry problems for the application of semi-structured data will also be investigated."
+        topics:
+          - "Appraise what kinds of semi-structured data exist and the problems they present for analysis"
+          - "Analyse different kinds of algorithms for different kinds of semi-structured data"
+          - "Develop and modify some standard algorithms for semi-structured data"
+          - "Examine some characteristic industry problems involving semi-structured data, and analyse the suitability of different algorithms"
+
   - year: "2025"
     academic_year: "2025 Academic Year"
     courses:
       - code: "FIT5201"
         name: "Machine learning"
         university: "Monash University"
-        role: "Guest Lecturer"
-        term: "Semester 1, 2 & Summer (T3)"
+        role: "Guest Lecturer (on EM algorithms and GMMs)"
+        term: "Semester 2"
         level: "Postgraduate"
         faculty: "Faculty of Information Technology"
         credit_points: 6
