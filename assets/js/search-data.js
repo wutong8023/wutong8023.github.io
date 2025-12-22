@@ -121,6 +121,9 @@ ninja.data = [{
           section: "News",},{id: "news-we-ll-be-giving-a-3-hour-tutorial-at-emnlp-2025-t7-continual-learning-of-llms-november-8-happy-to-connect",
           title: 'We’ll be giving a 3-hour tutorial at EMNLP 2025 (T7 - Continual Learning...',
           description: "",
+          section: "News",},{id: "news-our-paper-on-environment-aware-code-generation-has-been-accepted-to-icse-2026",
+          title: 'Our paper on Environment-aware Code Generation has been accepted to ICSE 2026.',
+          description: "",
           section: "News",},{
         id: 'social-dblp',
         title: 'DBLP',
