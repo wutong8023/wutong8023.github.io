@@ -124,6 +124,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-environment-aware-code-generation-has-been-accepted-to-icse-2026",
           title: 'Our paper on Environment-aware Code Generation has been accepted to ICSE 2026.',
           description: "",
+          section: "News",},{id: "news-our-paper-on-lifelong-scene-graph-generation-has-been-accepted-to-pattern-recognition",
+          title: 'Our paper on Lifelong Scene Graph Generation has been accepted to Pattern Recognition....',
+          description: "",
+          section: "News",},{id: "news-our-paper-on-kg-enhanced-method-for-versicode-has-been-accepted-to-dasfaa-2026",
+          title: 'Our paper on KG-enhanced Method for VersiCode has been accepted to DASFAA 2026....',
+          description: "",
           section: "News",},{
         id: 'social-dblp',
         title: 'DBLP',
