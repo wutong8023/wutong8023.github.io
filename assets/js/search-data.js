@@ -136,6 +136,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-kg-enhanced-method-for-versicode-has-been-accepted-to-dasfaa-2026",
           title: 'Our paper on KG-enhanced Method for VersiCode has been accepted to DASFAA 2026....',
           description: "",
+          section: "News",},{id: "news-our-paper-on-conditional-multi-agent-topology-design-has-been-accepted-to-iclr-2026",
+          title: 'Our paper on Conditional Multi-Agent Topology Design has been accepted to ICLR 2026....',
+          description: "",
           section: "News",},{
         id: 'social-dblp',
         title: 'DBLP',
