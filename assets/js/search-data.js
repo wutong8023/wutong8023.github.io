@@ -127,7 +127,7 @@ ninja.data = [{
           section: "News",},{id: "news-i-will-serve-as-a-guest-editor-for-the-knowledge-engineering-review-special-issue-on-memory-augmented-llm-agents-submissions-are-very-welcome",
           title: 'I will serve as a guest editor for the Knowledge Engineering Review special...',
           description: "",
-          section: "News",},{id: "news-i-will-serve-as-an-area-chair-for-the-acl-arr-january-2026-cycle-focusing-on-machine-learning-for-nlp",
+          section: "News",},{id: "news-i-will-serve-as-an-area-chair-for-the-acl-arr-january-2026-cycle",
           title: 'I will serve as an Area Chair for the ACL ARR January 2026...',
           description: "",
           section: "News",},{id: "news-our-paper-on-lifelong-scene-graph-generation-has-been-accepted-to-pattern-recognition",
