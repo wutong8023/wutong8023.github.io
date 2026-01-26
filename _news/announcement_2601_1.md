@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on [Lifelong Scene Graph Generation](https://arxiv.org/pdf/2401.14626) has been accepted to [Pattern Recognition]().
+Our paper on [Lifelong Scene Graph Generation](https://arxiv.org/pdf/2401.14626) has been accepted to [*Pattern Recognition*]().
