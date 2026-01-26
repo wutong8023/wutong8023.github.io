@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will serve as an Area Chair for the ACL ARR January 2026 cycle, focusing on Machine Learning for NLP.
+I will serve as an Area Chair for the ACL ARR January 2026 cycle.
