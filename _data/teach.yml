@@ -23,7 +23,7 @@ current_courses:
       - code: "FIT5212"
         name: "Data Analysis for Semi-Structured Data"
         university: "Monash University"
-        role: "Co-Lecturer with Prof. Wray Buntine"
+        role: "Co-Lecturer"
         term: "Semester 1"
         level: "Postgraduate"
         faculty: "Faculty of Information Technology"
