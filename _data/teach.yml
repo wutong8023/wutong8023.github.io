@@ -35,6 +35,23 @@ current_courses:
           - "Develop and modify some standard algorithms for semi-structured data"
           - "Examine some characteristic industry problems involving semi-structured data, and analyse the suitability of different algorithms"
 
+  - year: "2026"
+    academic_year: "2026 Academic Year"
+    courses:
+      - code: "ADS4010"
+        name: "Frontier of Data Science"
+        university: "Monash University"
+        role: "Guest Lecturer (on Learning with Evolving Knowledge)"
+        term: "Semester 1"
+        level: "Undergraduate"
+        faculty: "Faculty of Science"
+        credit_points: 6
+        description: "This unit will explore the frontier of data science, including the latest research in data science and the applications of data science in various fields."
+        topics:
+          - "The frontier of data science"
+          - "The applications of data science in various fields"
+          
+
   - year: "2025"
     academic_year: "2025 Academic Year"
     courses:
