@@ -93,15 +93,15 @@
   contents:
     - title: Area Chair of Program Committee (Conferences)
       items:
-        - ACL ARR
+        - ACL ARR (2025, 2026)
     - title: Member of Program Committee (Conferences)
       items:
-        - ICML
-        - NeurIPS
-        - ICLR
-        - AAAI
-        - IJCAI
-        - ACL ARR
+        - ICML (2023, 2024, 2025)
+        - NeurIPS (2023, 2024, 2025)
+        - ICLR (2023, 2024, 2025, 2026)
+        - AAAI (2022, 2025, 2026)
+        - IJCAI (2023, 2024, 2026)
+        - ACL ARR (2022, 2023, 2024, 2025)
     - title: Reviewer of Journals
       items:
         - IEEE Transactions on Knowledge and Data Engineering 
