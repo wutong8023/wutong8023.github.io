@@ -136,6 +136,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-conditional-multi-agent-topology-design-has-been-accepted-to-iclr-2026",
           title: 'Our paper on Conditional Multi-Agent Topology Design has been accepted to ICLR 2026....',
           description: "",
+          section: "News",},{id: "news-our-paper-on-uncertainty-aware-dynamic-rag-has-been-accepted-to-findings-of-acl-2026",
+          title: 'Our paper on Uncertainty-aware Dynamic RAG has been accepted to Findings of ACL...',
+          description: "",
           section: "News",},{
         id: 'social-dblp',
         title: 'DBLP',
