@@ -41,19 +41,6 @@
         - name: Prof. Reza Haffari
           url: https://rezahaffari.github.io/HomePage/HomePage.html
 
-    - name: Peiwen Zhao
-      period: 2023 - present
-      research: Temporal Reasoning with LLM
-      homepage: ""
-      publications: []
-      affiliation: Beijing Institute of Technology
-      co-supervisor:
-        - name: Prof. Chong Feng
-          url: https://scholar.google.com/citations?user=WSqhHRYAAAAJ&hl=zh-CN
-        - name: Prof. Wei Lu
-          url: https://scholar.google.com/citations?user=n41KN9AAAAAJ&hl=en&oi=ao
-        - name: Prof. Reza Haffari
-          url: https://rezahaffari.github.io/HomePage/HomePage.html
 
 - title: Master’s Students
   type: research_team_table
