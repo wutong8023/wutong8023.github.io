@@ -31,6 +31,8 @@ I’m a Research Fellow in the Department of Data Science & AI at [Monash Univer
 
 My research focuses on enabling AI systems to perceive, memorize, reason, and adapt within evolving environments, building on my long-term work in [Continual Learning](https://scholar.google.com/citations?user=u1Qp8lUAAAAJ&hl=en) and [Knowledge Graphs](https://scholar.google.com/citations?user=u1Qp8lUAAAAJ&hl=en).
 
+<br>
+
 > [**AI systems should evolve continuously while remaining reliable and resource-efficient.**]()
 
 
