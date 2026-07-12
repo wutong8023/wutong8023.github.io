@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on [a benchmark for agentic full-page academic reconstruction]() has been accepted to [ACM MM 2026]().
+Our paper on [New Benchmark for Agentic Full-page Academic Reconstruction]() has been accepted to [ACM MM 2026]().
