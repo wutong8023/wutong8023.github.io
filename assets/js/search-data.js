@@ -139,8 +139,8 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-uncertainty-aware-dynamic-rag-has-been-accepted-to-findings-of-acl-2026",
           title: 'Our paper on Uncertainty-aware Dynamic RAG has been accepted to Findings of ACL...',
           description: "",
-          section: "News",},{id: "news-our-paper-on-a-benchmark-for-agentic-full-page-academic-reconstruction-has-been-accepted-to-acm-mm-2026",
-          title: 'Our paper on a benchmark for agentic full-page academic reconstruction has been accepted...',
+          section: "News",},{id: "news-our-paper-on-new-benchmark-for-agentic-full-page-academic-reconstruction-has-been-accepted-to-acm-mm-2026",
+          title: 'Our paper on New Benchmark for Agentic Full-page Academic Reconstruction has been accepted...',
           description: "",
           section: "News",},{
         id: 'social-dblp',
