@@ -33,10 +33,6 @@ My research focuses on enabling AI systems to perceive, memorize, reason, and ad
 
 <br>
 
-<br>
-
-<br>
-
 > [**AI systems should evolve continuously while remaining reliable and resource-efficient.**]()
 
 
