@@ -142,6 +142,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-new-benchmark-for-agentic-academic-reconstruction-has-been-accepted-to-acm-mm-2026",
           title: 'Our paper on New Benchmark for Agentic Academic Reconstruction has been accepted to...',
           description: "",
+          section: "News",},{id: "news-our-paper-on-unified-agent-for-structured-knowledge-reasoning-has-been-accepted-to-tkde",
+          title: 'Our paper on Unified Agent for Structured Knowledge Reasoning has been accepted to...',
+          description: "",
           section: "News",},{
         id: 'social-dblp',
         title: 'DBLP',
