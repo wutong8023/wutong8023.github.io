@@ -145,6 +145,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-unified-agent-for-structured-knowledge-reasoning-has-been-accepted-to-tkde",
           title: 'Our paper on Unified Agent for Structured Knowledge Reasoning has been accepted to...',
           description: "",
+          section: "News",},{id: "news-our-paper-on-robust-multi-agent-topology-design-has-been-accepted-to-neurips-2026",
+          title: 'Our paper on Robust Multi-Agent Topology Design has been accepted to NeurIPS 2026....',
+          description: "",
           section: "News",},{
         id: 'social-dblp',
         title: 'DBLP',
